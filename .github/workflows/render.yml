@@ -1,0 +1,95 @@
+name: Render story
+
+# Claude pushes stories/<id>/ (spec, timeline, voice mixes). This renders the 3D video on 10 machines at once,
+# joins the parts, makes the covers, puts the videos on the media branch and queues both posts.
+on:
+  push:
+    branches: [main]
+    paths: ["stories/*/READY"]
+  workflow_dispatch:
+    inputs:
+      id: { description: "Story id (folder in stories/). Empty = the next story with READY and no RENDERED", default: "" }
+      queue: { description: "1 = put on media branch and queue the posts; 0 = test render only (videos as a download)", default: "1" }
+
+concurrency: { group: render, cancel-in-progress: false }
+permissions: { contents: write, actions: write }
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      id: ${{ steps.p.outputs.id }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: p
+        run: |
+          ID="${{ inputs.id }}"
+          if [ -z "$ID" ]; then
+            for d in stories/*/; do d=${d%/}; [ -f "$d/READY" ] && [ ! -f "$d/RENDERED" ] && ID=$(basename "$d") && break; done
+          fi
+          echo "story: ${ID:-none}"; echo "id=$ID" >> $GITHUB_OUTPUT
+
+  render:
+    needs: plan
+    if: needs.plan.outputs.id != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix: { part: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Tools
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q ffmpeg >/dev/null
+          pip install -q playwright
+      - name: Render part ${{ matrix.part }}
+        env: { ID: "${{ needs.plan.outputs.id }}" }
+        run: |
+          mkdir -p work && cp -r stories/$ID work/$ID
+          python pipeline/render.py work/$ID --part ${{ matrix.part }} --parts 10
+      - uses: actions/upload-artifact@v4
+        with:
+          name: part-${{ matrix.part }}
+          path: work/${{ needs.plan.outputs.id }}/seg/*_[0-9][0-9].mp4
+          retention-days: 3
+
+  assemble:
+    needs: [plan, render]
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env: { ID: "${{ needs.plan.outputs.id }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: sudo apt-get update -q && sudo apt-get install -y -q ffmpeg >/dev/null && pip install -q playwright
+      - uses: actions/download-artifact@v4
+        with: { pattern: "part-*", merge-multiple: true, path: "parts" }
+      - name: Join, add audio, make covers
+        run: |
+          mkdir -p work && cp -r stories/$ID work/$ID && mkdir -p work/$ID/seg && cp parts/*.mp4 work/$ID/seg/
+          python pipeline/assemble.py work/$ID
+          python pipeline/render.py work/$ID --cover
+      - name: Keep the videos as a download (test renders)
+        if: inputs.queue == '0'
+        uses: actions/upload-artifact@v4
+        with: { name: videos, path: "work/${{ needs.plan.outputs.id }}/*.mp4" }
+      - name: Put on the media branch and queue both posts
+        if: inputs.queue != '0'
+        env: { GITHUB_TOKEN: "${{ github.token }}" }
+        run: |
+          git config user.name kathaclay-bot && git config user.email kathaclay-bot@users.noreply.github.com
+          for L in en hi; do
+            python poster/media_branch.py add ${ID}_$L work/$ID/${ID}_$L.mp4 work/$ID/cover_$L.png
+            [ "$(python poster/media_branch.py check ${ID}_$L)" = "on media branch" ] || { echo "media branch is missing ${ID}_$L"; exit 1; }
+          done
+          python pipeline/queue_posts.py $ID
+          date -u +%FT%TZ > stories/$ID/RENDERED
+          git add queue stories/$ID/RENDERED && git commit -q -m "rendered and queued $ID" && git pull -q --rebase origin main && git push -q
+      - name: Start the poster (it waits for each post time itself)
+        if: inputs.queue != '0'
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: gh workflow run post.yml --repo "${{ github.repository }}" --ref main || true

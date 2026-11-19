@@ -1,0 +1,1142 @@
+{
+ "id": "000_engine_test_ganesha",
+ "snake": "neck",
+ "title": {
+  "en": [
+   "Why Does Lord Ganesha Have",
+   "AN ELEPHANT HEAD?"
+  ],
+  "hi": [
+   "भगवान गणेश का सिर",
+   "हाथी का क्यों है?"
+  ]
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "en": "Why does Lord Ganesha have an elephant's head?",
+   "hi": "भगवान गणेश का सिर हाथी का क्यों है?",
+   "cap_en": "",
+   "cap_hi": "",
+   "shot": {
+    "set": "kailash",
+    "cast": [
+     {
+      "who": "shiva",
+      "seated": true
+     },
+     {
+      "who": "ganesha",
+      "at": "front",
+      "act": [
+       {
+        "do": "hop",
+        "height": 0.05
+       },
+       {
+        "do": "head_tilt"
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "kind": "petals",
+      "at": "front"
+     }
+    ],
+    "cam": {
+     "frame": [
+      "ganesha",
+      "shiva"
+     ],
+     "fit_h": 0.62,
+     "push": 0.15
+    }
+   }
+  },
+  {
+   "id": "create",
+   "en": "Mata Parvati once shaped a boy from her own body, and gave him life.",
+   "hi": "एक बार माता पार्वती ने अपने शरीर के मैल से एक बालक बनाया, और उसमें प्राण डाले।",
+   "cap_en": "*Mata Parvati* once shaped a boy | *from her own body,* | and gave him life.",
+   "cap_hi": "एक बार *माता पार्वती* ने | अपने शरीर के मैल से | *एक बालक* बनाया, | और उसमें प्राण डाले।",
+   "src_en": "Shiva Purana, Rudra Samhita, Kumara Khanda 13",
+   "src_hi": "शिव पुराण, रुद्र संहिता, कुमार खंड 13",
+   "shot": {
+    "set": "home",
+    "cast": [
+     {
+      "who": "parvati",
+      "at": "step_left",
+      "yaw": 0.45,
+      "pose": [
+       "rest",
+       "bless",
+       0.15,
+       0.35
+      ]
+     },
+     {
+      "who": "boy",
+      "at": "step_right",
+      "yaw": -0.35,
+      "act": [
+       {
+        "do": "appear",
+        "at": 0.35,
+        "dur": 0.35
+       }
+      ],
+      "eyes_closed": 0.7
+     }
+    ],
+    "fx": [
+     {
+      "kind": "sparkle",
+      "on": "boy",
+      "from": 0,
+      "to": 0.75
+     }
+    ],
+    "cam": {
+     "frame": [
+      "parvati",
+      "boy"
+     ],
+     "include_hidden": true
+    }
+   }
+  },
+  {
+   "id": "guard",
+   "en": "As she went for her bath, she placed him at her door, and said: let no one in.",
+   "hi": "स्नान करने जाते हुए, उन्होंने उसे द्वार पर खड़ा किया, और कहा, किसी को भीतर मत आने देना।",
+   "cap_en": "As she went for her bath, | she placed him *at her door,* | and said: | *let no one in.*",
+   "cap_hi": "स्नान करने जाते हुए, | उन्होंने उसे *द्वार पर* खड़ा किया, | और कहा, | *किसी को भीतर मत आने देना।*",
+   "src_en": "Shiva Purana, Rudra Samhita, Kumara Khanda 13",
+   "src_hi": "शिव पुराण, रुद्र संहिता, कुमार खंड 13",
+   "shot": {
+    "set": "home",
+    "cast": [
+     {
+      "who": "parvati",
+      "at": "step_left",
+      "to": "inside",
+      "walk": [
+       0.05,
+       0.5
+      ],
+      "act": [
+       {
+        "do": "exit",
+        "at": 0.5
+       }
+      ]
+     },
+     {
+      "who": "boy",
+      "at": "right",
+      "to": "door",
+      "walk": [
+       0.4,
+       0.65
+      ],
+      "mood_to": [
+       "angry",
+       0.65
+      ],
+      "act": [
+       {
+        "do": "staff",
+        "mode": "block",
+        "from": 0.65
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "kind": "doors",
+      "open": 0,
+      "close": 0.6
+     }
+    ],
+    "cam": {
+     "frame": [
+      "boy",
+      "parvati"
+     ],
+     "angle": "right"
+    }
+   }
+  },
+  {
+   "id": "arrive",
+   "en": "Then Lord Shiva came. The boy did not know him, and stopped him at the door.",
+   "hi": "तभी भगवान शिव आए। बालक उन्हें नहीं पहचानता था, और उसने उन्हें द्वार पर रोक दिया।",
+   "cap_en": "Then *Lord Shiva* came. | The boy *did not know him,* | and stopped him at the door.",
+   "cap_hi": "तभी *भगवान शिव* आए। | बालक उन्हें *नहीं पहचानता था,* | और उसने उन्हें | द्वार पर रोक दिया।",
+   "src_en": "Shiva Purana, Rudra Samhita, Kumara Khanda 13",
+   "src_hi": "शिव पुराण, रुद्र संहिता, कुमार खंड 13",
+   "shot": {
+    "set": "home",
+    "cast": [
+     {
+      "who": "shiva",
+      "at": "off_right",
+      "to": "right",
+      "walk": [
+       0,
+       0.5
+      ],
+      "pose": "hold",
+      "yaw": -1.0
+     },
+     {
+      "who": "boy",
+      "at": "door",
+      "yaw": 0.35,
+      "mood": "angry",
+      "talk": [
+       0.6,
+       0.95
+      ],
+      "act": [
+       {
+        "do": "staff",
+        "mode": "block"
+       }
+      ]
+     }
+    ],
+    "cam": {
+     "frame": [
+      "boy",
+      "shiva"
+     ],
+     "angle": "left"
+    }
+   }
+  },
+  {
+   "id": "battle",
+   "en": "Shiva's ganas fought him, but the boy defeated them all.",
+   "hi": "शिव के गणों ने उससे युद्ध किया, पर बालक ने सबको हरा दिया।",
+   "cap_en": "Shiva's *ganas* fought him, | but the boy | *defeated them all.*",
+   "cap_hi": "शिव के *गणों* ने उससे युद्ध किया, | पर बालक ने | *सबको हरा दिया।*",
+   "src_en": "Shiva Purana, Rudra Samhita, Kumara Khanda 14 to 15",
+   "src_hi": "शिव पुराण, रुद्र संहिता, कुमार खंड 14 से 15",
+   "shot": {
+    "set": "home",
+    "cast": [
+     {
+      "who": "boy",
+      "at": "door",
+      "yaw": 0.45,
+      "mood": "angry",
+      "act": [
+       {
+        "do": "staff",
+        "mode": "swing"
+       }
+      ]
+     },
+     {
+      "who": "gana1",
+      "at": "far_right",
+      "yaw": -1.2,
+      "act": [
+       {
+        "do": "knockback",
+        "at": 0.3,
+        "dir": [
+         1.6,
+         1.6
+        ]
+       }
+      ]
+     },
+     {
+      "who": "gana2",
+      "at": "right",
+      "yaw": -1.2,
+      "act": [
+       {
+        "do": "knockback",
+        "at": 0.55,
+        "dir": [
+         2.4,
+         0.6
+        ]
+       }
+      ]
+     },
+     {
+      "who": "gana3",
+      "at": "step_right",
+      "yaw": -1.2,
+      "act": [
+       {
+        "do": "knockback",
+        "at": 0.8,
+        "dir": [
+         1.8,
+         -0.4
+        ]
+       }
+      ]
+     }
+    ],
+    "cam": {
+     "frame": [
+      "boy",
+      "gana1",
+      "gana2",
+      "gana3"
+     ]
+    }
+   }
+  },
+  {
+   "id": "strike",
+   "en": "At last, Shiva cut off the boy's head with his trident.",
+   "hi": "अंत में, शिव ने अपने त्रिशूल से बालक का सिर काट दिया।",
+   "cap_en": "At last, | Shiva cut off the boy's head | *with his trident.*",
+   "cap_hi": "अंत में, | शिव ने अपने *त्रिशूल* से | बालक का सिर काट दिया।",
+   "src_en": "Shiva Purana, Rudra Samhita, Kumara Khanda 16",
+   "src_hi": "शिव पुराण, रुद्र संहिता, कुमार खंड 16",
+   "shot": {
+    "set": "home",
+    "sky": [
+     "dawn",
+     "dusk"
+    ],
+    "cast": [
+     {
+      "who": "shiva",
+      "at": "right",
+      "yaw": -1.0,
+      "pose": [
+       "hold",
+       "raise",
+       0.05,
+       0.35
+      ],
+      "raise": [
+       0.05,
+       0.35
+      ],
+      "mouth": "flat"
+     }
+    ],
+    "fx": [
+     {
+      "kind": "trident_glow",
+      "from": 0.05,
+      "to": 0.4
+     },
+     {
+      "kind": "flash",
+      "at": 0.42
+     }
+    ],
+    "cam": {
+     "frame": [
+      "shiva"
+     ],
+     "angle": "low"
+    },
+    "then": {
+     "at": 0.45,
+     "cast": [],
+     "fx": [
+      {
+       "kind": "fallen_staff",
+       "at": "center"
+      },
+      {
+       "kind": "dim"
+      },
+      {
+       "kind": "tint",
+       "rgb": [
+        0.92,
+        0.9,
+        1
+       ]
+      }
+     ],
+     "cam": {
+      "frame": [],
+      "spot": "center",
+      "angle": "high"
+     }
+    }
+   }
+  },
+  {
+   "id": "fury",
+   "en": "When Parvati learned this, she was filled with fury, and all the gods were afraid.",
+   "hi": "यह जानकर माता पार्वती क्रोध से भर उठीं, और सारे देवता भयभीत हो गए।",
+   "cap_en": "When Parvati learned this, | she was filled with *fury,* | and all the gods | *were afraid.*",
+   "cap_hi": "यह जानकर माता पार्वती | *क्रोध से भर उठीं,* | और सारे देवता | *भयभीत हो गए।*",
+   "src_en": "Shiva Purana, Rudra Samhita, Kumara Khanda 17",
+   "src_hi": "शिव पुराण, रुद्र संहिता, कुमार खंड 17",
+   "dark": true,
+   "shot": {
+    "set": "home",
+    "sky": [
+     "dusk",
+     "fury"
+    ],
+    "light": "warm_red",
+    "cast": [
+     {
+      "who": "parvati",
+      "at": "center",
+      "pose": [
+       "grief",
+       "fury",
+       0.3,
+       0.45
+      ],
+      "mood": "worried",
+      "mood_to": [
+       "angry",
+       0.35
+      ],
+      "mouth": "flat",
+      "act": [
+       {
+        "do": "tremble"
+       }
+      ]
+     },
+     {
+      "who": "deva1",
+      "at": "front_left",
+      "yaw": "away",
+      "pose": "afraid",
+      "mood": "worried",
+      "mouth": "oh",
+      "act": [
+       {
+        "do": "tremble"
+       }
+      ]
+     },
+     {
+      "who": "deva2",
+      "at": "front_right",
+      "yaw": "away",
+      "pose": "afraid",
+      "mood": "worried",
+      "mouth": "oh",
+      "act": [
+       {
+        "do": "tremble"
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "kind": "rings",
+      "on": "parvati",
+      "from": 0.35
+     },
+     {
+      "kind": "light",
+      "on": "parvati",
+      "color": "red",
+      "from": 0.35
+     },
+     {
+      "kind": "tint",
+      "rgb": [
+       1,
+       0.94,
+       0.93
+      ]
+     }
+    ],
+    "cam": {
+     "frame": [
+      "parvati",
+      "deva1",
+      "deva2"
+     ]
+    }
+   }
+  },
+  {
+   "id": "demand",
+   "en": "She said: bring my son to life again, and give him a place of honor.",
+   "hi": "उन्होंने कहा, मेरे पुत्र को फिर से जीवित करो, और उसे सम्मान का स्थान दो।",
+   "cap_en": "She said: | *bring my son to life again,* | and give him | *a place of honor.*",
+   "cap_hi": "उन्होंने कहा, | *मेरे पुत्र को फिर से जीवित करो,* | और उसे | *सम्मान का स्थान दो।*",
+   "src_en": "Shiva Purana, Rudra Samhita, Kumara Khanda 17",
+   "src_hi": "शिव पुराण, रुद्र संहिता, कुमार खंड 17",
+   "shot": {
+    "set": "home",
+    "sky": [
+     "fury",
+     "fury"
+    ],
+    "light": "warm_red",
+    "cast": [
+     {
+      "who": "parvati",
+      "at": "center",
+      "pose": [
+       "fury",
+       "point",
+       0.1,
+       0.3
+      ],
+      "mood": "angry",
+      "mouth": "flat",
+      "talk": [
+       0.1,
+       0.9
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "kind": "rings",
+      "on": "parvati",
+      "from": 0,
+      "size": 2.6
+     },
+     {
+      "kind": "light",
+      "on": "parvati",
+      "color": "red",
+      "power": 3
+     },
+     {
+      "kind": "tint",
+      "rgb": [
+       1,
+       0.94,
+       0.93
+      ]
+     }
+    ],
+    "cam": {
+     "frame": [
+      "parvati"
+     ],
+     "fit_h": 0.62
+    }
+   }
+  },
+  {
+   "id": "north",
+   "en": "So Shiva told the gods: go north, and bring the head of the first being you meet.",
+   "hi": "तब शिव ने देवताओं से कहा, उत्तर दिशा में जाओ, और जो पहला प्राणी मिले, उसका सिर ले आओ।",
+   "cap_en": "So Shiva told the gods: | *go north,* | and bring the head of | *the first being you meet.*",
+   "cap_hi": "तब शिव ने देवताओं से कहा, | *उत्तर दिशा में जाओ,* | और जो *पहला प्राणी* मिले, | उसका सिर ले आओ।",
+   "src_en": "Shiva Purana, Rudra Samhita, Kumara Khanda 17",
+   "src_hi": "शिव पुराण, रुद्र संहिता, कुमार खंड 17",
+   "shot": {
+    "set": "kailash",
+    "sky": [
+     "dusk",
+     "calm"
+    ],
+    "cast": [
+     {
+      "who": "shiva",
+      "at": "front",
+      "pose": [
+       "hold",
+       "point",
+       0.2,
+       0.35
+      ]
+     },
+     {
+      "who": "deva1",
+      "at": "front_left",
+      "to": "off_left",
+      "walk": [
+       0.62,
+       1
+      ],
+      "yaw": "away",
+      "pose": "namaste"
+     },
+     {
+      "who": "deva2",
+      "at": "front_far",
+      "to": "off_left",
+      "walk": [
+       0.65,
+       1
+      ],
+      "yaw": "away",
+      "pose": "namaste"
+     },
+     {
+      "who": "deva3",
+      "at": "front_right",
+      "to": "off_left",
+      "walk": [
+       0.68,
+       1
+      ],
+      "yaw": "away",
+      "pose": "namaste"
+     }
+    ],
+    "cam": {
+     "frame": [
+      "shiva",
+      "deva1",
+      "deva3"
+     ],
+     "angle": "high"
+    }
+   }
+  },
+  {
+   "id": "tusk",
+   "en": "The first one they met, was an elephant with a single tusk.",
+   "hi": "उन्हें सबसे पहले, एक दाँत वाला हाथी मिला।",
+   "cap_en": "The first one they met, | was *an elephant* | *with a single tusk.*",
+   "cap_hi": "उन्हें सबसे पहले, | *एक दाँत वाला* | *हाथी* मिला।",
+   "src_en": "Shiva Purana, Rudra Samhita, Kumara Khanda 17",
+   "src_hi": "शिव पुराण, रुद्र संहिता, कुमार खंड 17",
+   "shot": {
+    "set": "forest",
+    "sky": [
+     "calm",
+     "calm"
+    ],
+    "cast": [
+     {
+      "who": "elephant",
+      "at": "clearing",
+      "yaw": -0.8,
+      "act": [
+       {
+        "do": "sway_trunk"
+       }
+      ]
+     },
+     {
+      "who": "deva1",
+      "at": "off_left",
+      "to": "left",
+      "walk": [
+       0,
+       0.6
+      ],
+      "yaw": 1.3
+     },
+     {
+      "who": "deva2",
+      "at": "off_left",
+      "to": "front_left",
+      "walk": [
+       0.05,
+       0.62
+      ],
+      "yaw": 1.3
+     }
+    ],
+    "cam": {
+     "frame": [
+      "elephant",
+      "deva1",
+      "deva2"
+     ]
+    }
+   }
+  },
+  {
+   "id": "revive",
+   "en": "They placed its head on the boy, sprinkled holy water, and he woke up, as if from sleep.",
+   "hi": "उन्होंने वह सिर बालक के शरीर पर लगाया, पवित्र जल छिड़का, और वह मानो नींद से जाग उठा।",
+   "cap_en": "They placed its head on the boy, | sprinkled *holy water,* | and he *woke up,* | as if from sleep.",
+   "cap_hi": "उन्होंने वह सिर | बालक के शरीर पर लगाया, | *पवित्र जल* छिड़का, | और वह मानो *नींद से जाग उठा।*",
+   "src_en": "Shiva Purana, Rudra Samhita, Kumara Khanda 17",
+   "src_hi": "शिव पुराण, रुद्र संहिता, कुमार खंड 17",
+   "bells": [
+    0.62
+   ],
+   "shot": {
+    "set": "home",
+    "sky": [
+     "calm",
+     "gold"
+    ],
+    "cast": [
+     {
+      "who": "ganesha",
+      "at": "center",
+      "eyes_closed": 0.75
+     },
+     {
+      "who": "deva1",
+      "at": "step_left",
+      "yaw": 1.2,
+      "pose": "namaste"
+     },
+     {
+      "who": "deva2",
+      "at": "step_right",
+      "yaw": -1.2,
+      "pose": "namaste"
+     }
+    ],
+    "fx": [
+     {
+      "kind": "drops",
+      "from": [
+       "deva1",
+       "deva2"
+      ],
+      "to": "ganesha",
+      "until": 0.62
+     },
+     {
+      "kind": "orb_reveal",
+      "who": "ganesha",
+      "at": 0.62
+     }
+    ],
+    "cam": {
+     "frame": [
+      "ganesha",
+      "deva1",
+      "deva2"
+     ],
+     "include_hidden": true
+    }
+   }
+  },
+  {
+   "id": "son",
+   "en": "Shiva accepted him as his son, and made him the leader of his ganas.",
+   "hi": "शिव ने उसे अपना पुत्र स्वीकार किया, और अपने गणों का स्वामी बनाया।",
+   "cap_en": "Shiva accepted him | *as his son,* | and made him the leader | *of his ganas.*",
+   "cap_hi": "शिव ने उसे | *अपना पुत्र* स्वीकार किया, | और अपने *गणों का स्वामी* | बनाया।",
+   "src_en": "Shiva Purana, Rudra Samhita, Kumara Khanda 18",
+   "src_hi": "शिव पुराण, रुद्र संहिता, कुमार खंड 18",
+   "shot": {
+    "set": "home",
+    "sky": [
+     "gold",
+     "gold"
+    ],
+    "cast": [
+     {
+      "who": "ganesha",
+      "at": "center",
+      "act": [
+       {
+        "do": "head_tilt"
+       }
+      ]
+     },
+     {
+      "who": "shiva",
+      "at": "right",
+      "yaw": -0.45,
+      "pose": [
+       "hold",
+       "blessH",
+       0.05,
+       0.25
+      ]
+     },
+     {
+      "who": "parvati",
+      "at": "left",
+      "yaw": 0.4,
+      "pose": [
+       "rest",
+       "bless",
+       0.1,
+       0.3
+      ]
+     }
+    ],
+    "cam": {
+     "frame": [
+      "ganesha",
+      "shiva",
+      "parvati"
+     ]
+    }
+   }
+  },
+  {
+   "id": "name",
+   "en": "Ganapati. Lord of the ganas.",
+   "hi": "गणपति। यानी गणों के स्वामी।",
+   "cap_en": "#Ganapati | ~Lord of the ganas",
+   "cap_hi": "#गणपति | ~यानी गणों के स्वामी",
+   "src_en": "Shiva Purana, Rudra Samhita, Kumara Khanda 18",
+   "src_hi": "शिव पुराण, रुद्र संहिता, कुमार खंड 18",
+   "bells": [
+    0.05
+   ],
+   "shot": {
+    "set": "home",
+    "sky": [
+     "gold",
+     "gold"
+    ],
+    "cast": [
+     {
+      "who": "ganesha",
+      "at": "center",
+      "act": [
+       {
+        "do": "hop",
+        "height": 0.04
+       }
+      ]
+     },
+     {
+      "who": "gana1",
+      "at": "step_left",
+      "yaw": 0.9,
+      "pose": "namaste",
+      "act": [
+       {
+        "do": "bow"
+       }
+      ]
+     },
+     {
+      "who": "gana2",
+      "at": "step_right",
+      "yaw": -0.9,
+      "pose": "namaste",
+      "act": [
+       {
+        "do": "bow"
+       }
+      ]
+     },
+     {
+      "who": "gana3",
+      "at": "far_left",
+      "yaw": 1.2,
+      "pose": "namaste",
+      "act": [
+       {
+        "do": "bow"
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "kind": "petals",
+      "at": "center"
+     }
+    ],
+    "cam": {
+     "frame": [
+      "ganesha",
+      "gana1",
+      "gana2"
+     ],
+     "orbit": 0.25
+    }
+   }
+  },
+  {
+   "id": "first",
+   "en": "And Shiva blessed him: in every worship, Ganesha will be worshipped first.",
+   "hi": "और शिव ने वरदान दिया, कि हर पूजा में, सबसे पहले गणेश की पूजा होगी।",
+   "cap_en": "And Shiva blessed him: | in every worship, | Ganesha will be | *worshipped first.*",
+   "cap_hi": "और शिव ने वरदान दिया, | कि हर पूजा में, | *सबसे पहले* | *गणेश की पूजा होगी।*",
+   "src_en": "Shiva Purana, Rudra Samhita, Kumara Khanda 18",
+   "src_hi": "शिव पुराण, रुद्र संहिता, कुमार खंड 18",
+   "bells": [
+    0.02
+   ],
+   "shot": {
+    "set": "home",
+    "sky": [
+     "gold",
+     "gold"
+    ],
+    "cast": [
+     {
+      "who": "ganesha",
+      "at": "center",
+      "act": [
+       {
+        "do": "lift",
+        "y": 0.4
+       }
+      ]
+     },
+     {
+      "who": "deva1",
+      "at": "front_left",
+      "yaw": "away",
+      "pose": "namaste",
+      "act": [
+       {
+        "do": "bow",
+        "amount": 0.35
+       }
+      ],
+      "eyes": "closed"
+     },
+     {
+      "who": "deva2",
+      "at": "front_right",
+      "yaw": "away",
+      "pose": "namaste",
+      "act": [
+       {
+        "do": "bow",
+        "amount": 0.35
+       }
+      ],
+      "eyes": "closed"
+     }
+    ],
+    "fx": [
+     {
+      "kind": "seat",
+      "at": "center"
+     },
+     {
+      "kind": "petals",
+      "at": "center"
+     }
+    ],
+    "cam": {
+     "frame": [
+      "ganesha",
+      "deva1",
+      "deva2"
+     ],
+     "angle": "high"
+    }
+   }
+  },
+  {
+   "id": "end",
+   "en": "Ganpati Bappa Morya!",
+   "hi": "गणपति बप्पा मोरया!",
+   "cap_en": "*Ganpati Bappa Morya!*",
+   "cap_hi": "*गणपति बप्पा मोरया!*",
+   "src_en": "As told in the Shiva Purana",
+   "src_hi": "शिव पुराण के अनुसार",
+   "src_plain": true,
+   "no_claim": true,
+   "shot": {
+    "set": "home",
+    "sky": [
+     "gold",
+     "dawn"
+    ],
+    "cast": [
+     {
+      "who": "ganesha",
+      "at": "center",
+      "act": [
+       {
+        "do": "lift",
+        "y": 0.4
+       },
+       {
+        "do": "head_tilt"
+       }
+      ]
+     },
+     {
+      "who": "shiva",
+      "at": "right",
+      "yaw": -0.3,
+      "pose": [
+       "hold",
+       "blessH",
+       0,
+       0.2
+      ]
+     },
+     {
+      "who": "parvati",
+      "at": "left",
+      "yaw": 0.3,
+      "pose": [
+       "rest",
+       "bless",
+       0,
+       0.2
+      ]
+     },
+     {
+      "who": "gana1",
+      "at": "far_left",
+      "yaw": 0.6,
+      "pose": "cheer",
+      "act": [
+       {
+        "do": "hop"
+       }
+      ]
+     },
+     {
+      "who": "gana2",
+      "at": "far_right",
+      "yaw": -0.6,
+      "pose": "cheer",
+      "act": [
+       {
+        "do": "hop"
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "kind": "seat",
+      "at": "center"
+     },
+     {
+      "kind": "petals",
+      "at": "center"
+     }
+    ],
+    "cam": {
+     "frame": [
+      "ganesha",
+      "shiva",
+      "parvati"
+     ],
+     "push": -0.15
+    }
+   }
+  }
+ ],
+ "pills": [
+  {
+   "line": "create",
+   "a": 0.15,
+   "b": 0.95,
+   "on": "parvati",
+   "text": {
+    "en": "MATA PARVATI",
+    "hi": "माता पार्वती"
+   }
+  },
+  {
+   "line": "arrive",
+   "a": 0.15,
+   "b": 0.6,
+   "on": "shiva",
+   "text": {
+    "en": "LORD SHIVA",
+    "hi": "भगवान शिव"
+   }
+  },
+  {
+   "line": "battle",
+   "a": 0.1,
+   "b": 0.5,
+   "on": "gana2",
+   "style": "or",
+   "text": {
+    "en": "SHIVA'S GANAS",
+    "hi": "शिव के गण"
+   }
+  },
+  {
+   "line": "north",
+   "a": 0.1,
+   "b": 0.55,
+   "on": "deva2",
+   "text": {
+    "en": "DEVAS",
+    "hi": "देवता"
+   }
+  },
+  {
+   "line": "north",
+   "a": 0.35,
+   "b": 1,
+   "style": "gr",
+   "text": {
+    "en": "NORTH",
+    "hi": "उत्तर दिशा"
+   }
+  },
+  {
+   "line": "tusk",
+   "a": 0.55,
+   "b": 1,
+   "on": "elephant",
+   "style": "or",
+   "text": {
+    "en": "ONE TUSK",
+    "hi": "एक दाँत"
+   }
+  },
+  {
+   "line": "revive",
+   "a": 0.85,
+   "b": 1.05,
+   "on": "ganesha",
+   "style": "or",
+   "text": {
+    "en": "SHRI GANESHA",
+    "hi": "श्री गणेश"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Shiva Purana, Rudra Samhita, Kumara Khanda ch. 13 to 18 (wisdomlib translation)",
+   "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226137.html",
+   "fetched": "2026-11-19",
+   "supports": [
+    "create",
+    "guard",
+    "arrive",
+    "battle",
+    "strike",
+    "fury",
+    "demand",
+    "north",
+    "tusk",
+    "revive",
+    "son",
+    "name",
+    "first"
+   ]
+  }
+ ],
+ "cover": {
+  "line": "son",
+  "at": 0.5
+ },
+ "post": {
+  "en": {
+   "post_at": "2026-11-25T08:30:00+05:30",
+   "instagram_caption": "test\n\nWhat do you think?\n\n#kathaclay #kathaclayhindi #a #b #c",
+   "youtube_title": "Test",
+   "youtube_description": "x\n\nSources:\n• y\n\n#A #B #Shorts"
+  },
+  "hi": {
+   "post_at": "2026-11-25T08:30:00+05:30",
+   "instagram_caption": "test\n\nक्या?\n\n#kathaclayhindi #kathaclay #a #b #c",
+   "youtube_title": "Test",
+   "youtube_description": "x\n\nSources:\n• y\n\n#A #B #Shorts"
+  }
+ }
+}

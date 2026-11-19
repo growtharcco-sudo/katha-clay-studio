@@ -7,3 +7,5 @@ pipeline/models/
 .changed
 __pycache__/
 work/
+work/
+*.tmp.mp4

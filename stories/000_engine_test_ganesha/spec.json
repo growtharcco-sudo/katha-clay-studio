@@ -1,0 +1,979 @@
+{
+ "id": "000_engine_test_ganesha",
+ "snake": "neck",
+ "throat": 2,
+ "title": {
+  "en": [
+   "Why Does Lord Ganesha Have",
+   "AN ELEPHANT HEAD?"
+  ],
+  "hi": [
+   "भगवान गणेश का सिर",
+   "हाथी का क्यों है?"
+  ]
+ },
+ "order": [
+  "hook",
+  "create",
+  "guard",
+  "arrive",
+  "battle",
+  "strike",
+  "fury",
+  "demand",
+  "north",
+  "tusk",
+  "revive",
+  "son",
+  "name",
+  "first",
+  "end"
+ ],
+ "shots": {
+  "hook": {
+   "set": "kailash",
+   "cast": [
+    {
+     "who": "shiva",
+     "seated": true
+    },
+    {
+     "who": "ganesha",
+     "at": "front",
+     "act": [
+      {
+       "do": "hop",
+       "height": 0.05
+      },
+      {
+       "do": "head_tilt"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "kind": "petals",
+     "at": "front"
+    }
+   ],
+   "cam": {
+    "frame": [
+     "ganesha",
+     "shiva"
+    ],
+    "fit_h": 0.62,
+    "push": 0.15
+   }
+  },
+  "create": {
+   "set": "home",
+   "cast": [
+    {
+     "who": "parvati",
+     "at": "step_left",
+     "yaw": 0.45,
+     "pose": [
+      "rest",
+      "bless",
+      0.15,
+      0.35
+     ]
+    },
+    {
+     "who": "boy",
+     "at": "step_right",
+     "yaw": -0.35,
+     "act": [
+      {
+       "do": "appear",
+       "at": 0.35,
+       "dur": 0.35
+      }
+     ],
+     "eyes_closed": 0.7
+    }
+   ],
+   "fx": [
+    {
+     "kind": "sparkle",
+     "on": "boy",
+     "from": 0,
+     "to": 0.75
+    }
+   ],
+   "cam": {
+    "frame": [
+     "parvati",
+     "boy"
+    ],
+    "include_hidden": true
+   }
+  },
+  "guard": {
+   "set": "home",
+   "cast": [
+    {
+     "who": "parvati",
+     "at": "step_left",
+     "to": "inside",
+     "walk": [
+      0.05,
+      0.5
+     ],
+     "act": [
+      {
+       "do": "exit",
+       "at": 0.5
+      }
+     ]
+    },
+    {
+     "who": "boy",
+     "at": "right",
+     "to": "door",
+     "walk": [
+      0.4,
+      0.65
+     ],
+     "mood_to": [
+      "angry",
+      0.65
+     ],
+     "act": [
+      {
+       "do": "staff",
+       "mode": "block",
+       "from": 0.65
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "kind": "doors",
+     "open": 0,
+     "close": 0.6
+    }
+   ],
+   "cam": {
+    "frame": [
+     "boy",
+     "parvati"
+    ],
+    "angle": "right"
+   }
+  },
+  "arrive": {
+   "set": "home",
+   "cast": [
+    {
+     "who": "shiva",
+     "at": "off_right",
+     "to": "right",
+     "walk": [
+      0,
+      0.5
+     ],
+     "pose": "hold",
+     "yaw": -1.0
+    },
+    {
+     "who": "boy",
+     "at": "door",
+     "yaw": 0.35,
+     "mood": "angry",
+     "talk": [
+      0.6,
+      0.95
+     ],
+     "act": [
+      {
+       "do": "staff",
+       "mode": "block"
+      }
+     ]
+    }
+   ],
+   "cam": {
+    "frame": [
+     "boy",
+     "shiva"
+    ],
+    "angle": "left"
+   }
+  },
+  "battle": {
+   "set": "home",
+   "cast": [
+    {
+     "who": "boy",
+     "at": "door",
+     "yaw": 0.45,
+     "mood": "angry",
+     "act": [
+      {
+       "do": "staff",
+       "mode": "swing"
+      }
+     ]
+    },
+    {
+     "who": "gana1",
+     "at": "far_right",
+     "yaw": -1.2,
+     "act": [
+      {
+       "do": "knockback",
+       "at": 0.3,
+       "dir": [
+        1.6,
+        1.6
+       ]
+      }
+     ]
+    },
+    {
+     "who": "gana2",
+     "at": "right",
+     "yaw": -1.2,
+     "act": [
+      {
+       "do": "knockback",
+       "at": 0.55,
+       "dir": [
+        2.4,
+        0.6
+       ]
+      }
+     ]
+    },
+    {
+     "who": "gana3",
+     "at": "step_right",
+     "yaw": -1.2,
+     "act": [
+      {
+       "do": "knockback",
+       "at": 0.8,
+       "dir": [
+        1.8,
+        -0.4
+       ]
+      }
+     ]
+    }
+   ],
+   "cam": {
+    "frame": [
+     "boy",
+     "gana1",
+     "gana2",
+     "gana3"
+    ]
+   }
+  },
+  "strike": {
+   "set": "home",
+   "sky": [
+    "dawn",
+    "dusk"
+   ],
+   "cast": [
+    {
+     "who": "shiva",
+     "at": "right",
+     "yaw": -1.0,
+     "pose": [
+      "hold",
+      "raise",
+      0.05,
+      0.35
+     ],
+     "raise": [
+      0.05,
+      0.35
+     ],
+     "mouth": "flat"
+    }
+   ],
+   "fx": [
+    {
+     "kind": "trident_glow",
+     "from": 0.05,
+     "to": 0.4
+    },
+    {
+     "kind": "flash",
+     "at": 0.42
+    }
+   ],
+   "cam": {
+    "frame": [
+     "shiva"
+    ],
+    "angle": "low"
+   },
+   "then": {
+    "at": 0.45,
+    "cast": [],
+    "fx": [
+     {
+      "kind": "fallen_staff",
+      "at": "center"
+     },
+     {
+      "kind": "dim"
+     },
+     {
+      "kind": "tint",
+      "rgb": [
+       0.92,
+       0.9,
+       1
+      ]
+     }
+    ],
+    "cam": {
+     "frame": [],
+     "spot": "center",
+     "angle": "high"
+    }
+   }
+  },
+  "fury": {
+   "set": "home",
+   "sky": [
+    "dusk",
+    "fury"
+   ],
+   "light": "warm_red",
+   "cast": [
+    {
+     "who": "parvati",
+     "at": "center",
+     "pose": [
+      "grief",
+      "fury",
+      0.3,
+      0.45
+     ],
+     "mood": "worried",
+     "mood_to": [
+      "angry",
+      0.35
+     ],
+     "mouth": "flat",
+     "act": [
+      {
+       "do": "tremble"
+      }
+     ]
+    },
+    {
+     "who": "deva1",
+     "at": "front_left",
+     "yaw": "away",
+     "pose": "afraid",
+     "mood": "worried",
+     "mouth": "oh",
+     "act": [
+      {
+       "do": "tremble"
+      }
+     ]
+    },
+    {
+     "who": "deva2",
+     "at": "front_right",
+     "yaw": "away",
+     "pose": "afraid",
+     "mood": "worried",
+     "mouth": "oh",
+     "act": [
+      {
+       "do": "tremble"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "kind": "rings",
+     "on": "parvati",
+     "from": 0.35
+    },
+    {
+     "kind": "light",
+     "on": "parvati",
+     "color": "red",
+     "from": 0.35
+    },
+    {
+     "kind": "tint",
+     "rgb": [
+      1,
+      0.94,
+      0.93
+     ]
+    }
+   ],
+   "cam": {
+    "frame": [
+     "parvati",
+     "deva1",
+     "deva2"
+    ]
+   }
+  },
+  "demand": {
+   "set": "home",
+   "sky": [
+    "fury",
+    "fury"
+   ],
+   "light": "warm_red",
+   "cast": [
+    {
+     "who": "parvati",
+     "at": "center",
+     "pose": [
+      "fury",
+      "point",
+      0.1,
+      0.3
+     ],
+     "mood": "angry",
+     "mouth": "flat",
+     "talk": [
+      0.1,
+      0.9
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "kind": "rings",
+     "on": "parvati",
+     "from": 0,
+     "size": 2.6
+    },
+    {
+     "kind": "light",
+     "on": "parvati",
+     "color": "red",
+     "power": 3
+    },
+    {
+     "kind": "tint",
+     "rgb": [
+      1,
+      0.94,
+      0.93
+     ]
+    }
+   ],
+   "cam": {
+    "frame": [
+     "parvati"
+    ],
+    "fit_h": 0.62
+   }
+  },
+  "north": {
+   "set": "kailash",
+   "sky": [
+    "dusk",
+    "calm"
+   ],
+   "cast": [
+    {
+     "who": "shiva",
+     "at": "front",
+     "pose": [
+      "hold",
+      "point",
+      0.2,
+      0.35
+     ]
+    },
+    {
+     "who": "deva1",
+     "at": "front_left",
+     "to": "off_left",
+     "walk": [
+      0.62,
+      1
+     ],
+     "yaw": "away",
+     "pose": "namaste"
+    },
+    {
+     "who": "deva2",
+     "at": "front_far",
+     "to": "off_left",
+     "walk": [
+      0.65,
+      1
+     ],
+     "yaw": "away",
+     "pose": "namaste"
+    },
+    {
+     "who": "deva3",
+     "at": "front_right",
+     "to": "off_left",
+     "walk": [
+      0.68,
+      1
+     ],
+     "yaw": "away",
+     "pose": "namaste"
+    }
+   ],
+   "cam": {
+    "frame": [
+     "shiva",
+     "deva1",
+     "deva3"
+    ],
+    "angle": "high"
+   }
+  },
+  "tusk": {
+   "set": "forest",
+   "sky": [
+    "calm",
+    "calm"
+   ],
+   "cast": [
+    {
+     "who": "elephant",
+     "at": "clearing",
+     "yaw": -0.8,
+     "act": [
+      {
+       "do": "sway_trunk"
+      }
+     ]
+    },
+    {
+     "who": "deva1",
+     "at": "off_left",
+     "to": "left",
+     "walk": [
+      0,
+      0.6
+     ],
+     "yaw": 1.3
+    },
+    {
+     "who": "deva2",
+     "at": "off_left",
+     "to": "front_left",
+     "walk": [
+      0.05,
+      0.62
+     ],
+     "yaw": 1.3
+    }
+   ],
+   "cam": {
+    "frame": [
+     "elephant",
+     "deva1",
+     "deva2"
+    ]
+   }
+  },
+  "revive": {
+   "set": "home",
+   "sky": [
+    "calm",
+    "gold"
+   ],
+   "cast": [
+    {
+     "who": "ganesha",
+     "at": "center",
+     "eyes_closed": 0.75
+    },
+    {
+     "who": "deva1",
+     "at": "step_left",
+     "yaw": 1.2,
+     "pose": "namaste"
+    },
+    {
+     "who": "deva2",
+     "at": "step_right",
+     "yaw": -1.2,
+     "pose": "namaste"
+    }
+   ],
+   "fx": [
+    {
+     "kind": "drops",
+     "from": [
+      "deva1",
+      "deva2"
+     ],
+     "to": "ganesha",
+     "until": 0.62
+    },
+    {
+     "kind": "orb_reveal",
+     "who": "ganesha",
+     "at": 0.62
+    }
+   ],
+   "cam": {
+    "frame": [
+     "ganesha",
+     "deva1",
+     "deva2"
+    ],
+    "include_hidden": true
+   }
+  },
+  "son": {
+   "set": "home",
+   "sky": [
+    "gold",
+    "gold"
+   ],
+   "cast": [
+    {
+     "who": "ganesha",
+     "at": "center",
+     "act": [
+      {
+       "do": "head_tilt"
+      }
+     ]
+    },
+    {
+     "who": "shiva",
+     "at": "right",
+     "yaw": -0.45,
+     "pose": [
+      "hold",
+      "blessH",
+      0.05,
+      0.25
+     ]
+    },
+    {
+     "who": "parvati",
+     "at": "left",
+     "yaw": 0.4,
+     "pose": [
+      "rest",
+      "bless",
+      0.1,
+      0.3
+     ]
+    }
+   ],
+   "cam": {
+    "frame": [
+     "ganesha",
+     "shiva",
+     "parvati"
+    ]
+   }
+  },
+  "name": {
+   "set": "home",
+   "sky": [
+    "gold",
+    "gold"
+   ],
+   "cast": [
+    {
+     "who": "ganesha",
+     "at": "center",
+     "act": [
+      {
+       "do": "hop",
+       "height": 0.04
+      }
+     ]
+    },
+    {
+     "who": "gana1",
+     "at": "step_left",
+     "yaw": 0.9,
+     "pose": "namaste",
+     "act": [
+      {
+       "do": "bow"
+      }
+     ]
+    },
+    {
+     "who": "gana2",
+     "at": "step_right",
+     "yaw": -0.9,
+     "pose": "namaste",
+     "act": [
+      {
+       "do": "bow"
+      }
+     ]
+    },
+    {
+     "who": "gana3",
+     "at": "far_left",
+     "yaw": 1.2,
+     "pose": "namaste",
+     "act": [
+      {
+       "do": "bow"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "kind": "petals",
+     "at": "center"
+    }
+   ],
+   "cam": {
+    "frame": [
+     "ganesha",
+     "gana1",
+     "gana2"
+    ],
+    "orbit": 0.25
+   }
+  },
+  "first": {
+   "set": "home",
+   "sky": [
+    "gold",
+    "gold"
+   ],
+   "cast": [
+    {
+     "who": "ganesha",
+     "at": "center",
+     "act": [
+      {
+       "do": "lift",
+       "y": 0.4
+      }
+     ]
+    },
+    {
+     "who": "deva1",
+     "at": "front_left",
+     "yaw": "away",
+     "pose": "namaste",
+     "act": [
+      {
+       "do": "bow",
+       "amount": 0.35
+      }
+     ],
+     "eyes": "closed"
+    },
+    {
+     "who": "deva2",
+     "at": "front_right",
+     "yaw": "away",
+     "pose": "namaste",
+     "act": [
+      {
+       "do": "bow",
+       "amount": 0.35
+      }
+     ],
+     "eyes": "closed"
+    }
+   ],
+   "fx": [
+    {
+     "kind": "seat",
+     "at": "center"
+    },
+    {
+     "kind": "petals",
+     "at": "center"
+    }
+   ],
+   "cam": {
+    "frame": [
+     "ganesha",
+     "deva1",
+     "deva2"
+    ],
+    "angle": "high"
+   }
+  },
+  "end": {
+   "set": "home",
+   "sky": [
+    "gold",
+    "dawn"
+   ],
+   "cast": [
+    {
+     "who": "ganesha",
+     "at": "center",
+     "act": [
+      {
+       "do": "lift",
+       "y": 0.4
+      },
+      {
+       "do": "head_tilt"
+      }
+     ]
+    },
+    {
+     "who": "shiva",
+     "at": "right",
+     "yaw": -0.3,
+     "pose": [
+      "hold",
+      "blessH",
+      0,
+      0.2
+     ]
+    },
+    {
+     "who": "parvati",
+     "at": "left",
+     "yaw": 0.3,
+     "pose": [
+      "rest",
+      "bless",
+      0,
+      0.2
+     ]
+    },
+    {
+     "who": "gana1",
+     "at": "far_left",
+     "yaw": 0.6,
+     "pose": "cheer",
+     "act": [
+      {
+       "do": "hop"
+      }
+     ]
+    },
+    {
+     "who": "gana2",
+     "at": "far_right",
+     "yaw": -0.6,
+     "pose": "cheer",
+     "act": [
+      {
+       "do": "hop"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "kind": "seat",
+     "at": "center"
+    },
+    {
+     "kind": "petals",
+     "at": "center"
+    }
+   ],
+   "cam": {
+    "frame": [
+     "ganesha",
+     "shiva",
+     "parvati"
+    ],
+    "push": -0.15
+   }
+  }
+ },
+ "pills": [
+  {
+   "line": "create",
+   "a": 0.15,
+   "b": 0.95,
+   "on": "parvati",
+   "text": {
+    "en": "MATA PARVATI",
+    "hi": "माता पार्वती"
+   }
+  },
+  {
+   "line": "arrive",
+   "a": 0.15,
+   "b": 0.6,
+   "on": "shiva",
+   "text": {
+    "en": "LORD SHIVA",
+    "hi": "भगवान शिव"
+   }
+  },
+  {
+   "line": "battle",
+   "a": 0.1,
+   "b": 0.5,
+   "on": "gana2",
+   "style": "or",
+   "text": {
+    "en": "SHIVA'S GANAS",
+    "hi": "शिव के गण"
+   }
+  },
+  {
+   "line": "north",
+   "a": 0.1,
+   "b": 0.55,
+   "on": "deva2",
+   "text": {
+    "en": "DEVAS",
+    "hi": "देवता"
+   }
+  },
+  {
+   "line": "north",
+   "a": 0.35,
+   "b": 1,
+   "style": "gr",
+   "text": {
+    "en": "NORTH",
+    "hi": "उत्तर दिशा"
+   }
+  },
+  {
+   "line": "tusk",
+   "a": 0.55,
+   "b": 1,
+   "on": "elephant",
+   "style": "or",
+   "text": {
+    "en": "ONE TUSK",
+    "hi": "एक दाँत"
+   }
+  },
+  {
+   "line": "revive",
+   "a": 0.85,
+   "b": 1.05,
+   "on": "ganesha",
+   "style": "or",
+   "text": {
+    "en": "SHRI GANESHA",
+    "hi": "श्री गणेश"
+   }
+  }
+ ],
+ "cover": {
+  "line": "son",
+  "at": 0.5
+ }
+}

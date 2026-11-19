@@ -1,0 +1,13 @@
+{
+ "note": "Only these characters may appear. Each was checked against scripture and iconography and approved by the owner. Add a new one only after the owner approves its stills.",
+ "characters": ["shiva", "parvati", "boy", "ganesha", "elephant",
+                "deva1", "deva2", "deva3", "asura1", "asura2", "asura3", "sage1", "sage2", "sage3", "gana1", "gana2", "gana3"],
+ "about": {
+  "shiva": "blue-grey ash skin, matted hair with crescent moon, Vasuki at neck (or shoulder only for the blue-throat story), trishul, tiger skin; blesses with his RIGHT hand; seated on Kailash or standing",
+  "parvati": "fair, red sari with gold border, sindoor, bindi, two arms; blesses with right hand",
+  "boy": "the boy Parvati created (Ganesha before the elephant head), yellow dhoti, staff",
+  "ganesha": "child form, red complexion (Shiva Purana), elephant head, trunk curls to HIS LEFT, left tusk whole, right tusk broken, modak in left hand, right hand abhaya, gold crown",
+  "elephant": "single-tusked elephant from the north",
+  "devaN": "gods, gold crowns", "asuraN": "asuras, darker skin, no horns", "sageN": "white-bearded sages", "ganaN": "Shiva's attendants: top-knot, ash tripundra"
+ }
+}
