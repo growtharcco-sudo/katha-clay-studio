@@ -1,0 +1,27 @@
+name: Deep check (no public posts)
+on:
+  workflow_dispatch:
+    inputs:
+      skip_youtube: { description: "Skip the YouTube test upload", default: "0" }
+      only_lang: { description: "Only test one language (en or hi); empty = both", default: "" }
+jobs:
+  deep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q requests google-api-python-client google-auth
+      - env:
+          PAGES_BASE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+          IG_USER_ID_EN: ${{ secrets.IG_USER_ID_EN }}
+          IG_USER_ID_HI: ${{ secrets.IG_USER_ID_HI }}
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN_EN: ${{ secrets.YT_REFRESH_TOKEN_EN }}
+          YT_REFRESH_TOKEN_HI: ${{ secrets.YT_REFRESH_TOKEN_HI }}
+          SKIP_YT: ${{ inputs.skip_youtube }}
+          ONLY_LANG: ${{ inputs.only_lang }}
+        run: python tools/deep_check.py
