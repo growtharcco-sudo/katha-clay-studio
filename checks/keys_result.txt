@@ -1,0 +1,29 @@
+Secrets (shape only, never the value):
+  IG_TOKEN: 202 characters -> looks right
+  IG_USER_ID_EN: 17 characters -> looks right
+  IG_USER_ID_HI: 17 characters -> looks right
+  YT_CLIENT_ID: 73 characters -> looks right
+  YT_CLIENT_SECRET: 35 characters -> looks right
+  YT_REFRESH_TOKEN_EN: 127 characters -> looks right
+  YT_REFRESH_TOKEN_HI: not set
+
+Instagram accounts this token can post to:
+  Page 'Katha Clay Hindi' -> @kathaclayhindi  id 17841472176393679
+  Page 'Katha Clay' -> @kathaclay  id 17841463705116088
+  Page 'Doc Stick' -> @askdocstick  id 17841469913285971
+  Page 'Resolve AI Software' -> @resolveai.software  id 17841445632137697
+  Page 'Wibbo' -> @hellowibbo  id 17841453446665684
+  Page 'TRG Studio' -> @the_rigged_game  id 17841470022333505
+  Page 'The Last Mistake' -> @thelastmistakefiles  id 17841410039797856
+  Page 'The Real Number' -> @the_real.number  id 17841412838217113
+  Page 'The Unhyped' -> @theunhyped.ai  id 17841451192584212
+
+== English ==
+Instagram: OK, @kathaclay (id 17841463705116088)
+YouTube: FAILED ('unauthorized_client: Unauthorized', {'error': 'unauthorized_client', 'error_description': 'Unauthorized'})
+
+== Hindi ==
+Instagram: OK, @kathaclayhindi (id 17841472176393679)
+YouTube: YT_REFRESH_TOKEN_HI not set yet
+
+SOMETHING IS MISSING OR WRONG (see above)
