@@ -5,7 +5,7 @@ Secrets (shape only, never the value):
   YT_CLIENT_ID: 72 characters -> looks right
   YT_CLIENT_SECRET: 35 characters -> looks right
   YT_REFRESH_TOKEN_EN: 127 characters -> looks right
-  YT_REFRESH_TOKEN_HI: not set
+  YT_REFRESH_TOKEN_HI: 127 characters -> looks right
 
 Instagram accounts this token can post to:
   Page 'Katha Clay Hindi' -> @kathaclayhindi  id 17841472176393679
@@ -24,6 +24,6 @@ YouTube: OK, channel 'Katha Clay' (@kathaclay)
 
 == Hindi ==
 Instagram: OK, @kathaclayhindi (id 17841472176393679)
-YouTube: YT_REFRESH_TOKEN_HI not set yet
+YouTube: OK, channel 'Katha Clay Hindi' (@kathaclayhindi)
 
-SOMETHING IS MISSING OR WRONG (see above)
+ALL KEYS OK
