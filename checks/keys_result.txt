@@ -2,7 +2,7 @@ Secrets (shape only, never the value):
   IG_TOKEN: 202 characters -> looks right
   IG_USER_ID_EN: 17 characters -> looks right
   IG_USER_ID_HI: 17 characters -> looks right
-  YT_CLIENT_ID: 73 characters -> looks right
+  YT_CLIENT_ID: 72 characters -> looks right
   YT_CLIENT_SECRET: 35 characters -> looks right
   YT_REFRESH_TOKEN_EN: 127 characters -> looks right
   YT_REFRESH_TOKEN_HI: not set
@@ -20,7 +20,7 @@ Instagram accounts this token can post to:
 
 == English ==
 Instagram: OK, @kathaclay (id 17841463705116088)
-YouTube: FAILED ('unauthorized_client: Unauthorized', {'error': 'unauthorized_client', 'error_description': 'Unauthorized'})
+YouTube: OK, channel 'Katha Clay Hindi' (@kathaclayhindi)
 
 == Hindi ==
 Instagram: OK, @kathaclayhindi (id 17841472176393679)
