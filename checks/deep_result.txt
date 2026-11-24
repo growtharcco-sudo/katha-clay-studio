@@ -2,10 +2,18 @@ Hosting: OK 200 https://growtharcco-sudo.github.io/katha-clay-studio/_test/video
 
 == EN ==
 Instagram: processed the video -> FINISHED (not published)
-YouTube: skipped this run
+YouTube channel: ('Katha Clay', '@kathaclay')
+YouTube: upload OK -> https://youtube.com/shorts/LYG75b1eAuw API says: unlisted
+YouTube visibility: STAYED UNLISTED -> public uploads will work
+YouTube thumbnail: not allowed yet (custom Shorts thumbnails not enabled for this channel)
+YouTube: test video deleted
 
 == HI ==
 Instagram: processed the video -> FINISHED (not published)
-YouTube: skipped this run
+YouTube channel: ('Katha Clay Hindi', '@kathaclayhindi')
+YouTube: upload OK -> https://youtube.com/shorts/ISxtIcI-4go API says: unlisted
+YouTube visibility: STAYED UNLISTED -> public uploads will work
+YouTube thumbnail: not allowed yet (custom Shorts thumbnails not enabled for this channel)
+YouTube: test video deleted
 
 ALL OK
