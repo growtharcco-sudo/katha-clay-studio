@@ -1,0 +1,11 @@
+Hosting: OK 200 https://growtharcco-sudo.github.io/katha-clay-studio/_test/video.mp4
+
+== EN ==
+Instagram: processed the video -> FINISHED (not published)
+YouTube: skipped this run
+
+== HI ==
+Instagram: processed the video -> FINISHED (not published)
+YouTube: skipped this run
+
+ALL OK
