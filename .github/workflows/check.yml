@@ -3,7 +3,8 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["tools/check_keys.py", ".github/workflows/check.yml", "checks/**"]
+    paths: ["tools/check_keys.py", "checks/last"]
+permissions: { contents: write }
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -12,7 +13,8 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install -q requests google-api-python-client google-auth
-      - env:
+      - shell: bash
+        env:
           IG_USER_ID_EN: ${{ secrets.IG_USER_ID_EN }}
           IG_USER_ID_HI: ${{ secrets.IG_USER_ID_HI }}
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
@@ -20,4 +22,9 @@ jobs:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN_EN: ${{ secrets.YT_REFRESH_TOKEN_EN }}
           YT_REFRESH_TOKEN_HI: ${{ secrets.YT_REFRESH_TOKEN_HI }}
-        run: python tools/check_keys.py
+        run: python tools/check_keys.py 2>&1 | tee checks/keys_result.txt; exit ${PIPESTATUS[0]}
+      - name: Save the result in the repo (so Claude can read it)
+        if: always()
+        run: |
+          git config user.name kathaclay-bot && git config user.email kathaclay-bot@users.noreply.github.com
+          git add checks/keys_result.txt && git commit -q -m "key check result" && git pull -q --rebase origin main && git push -q || true
