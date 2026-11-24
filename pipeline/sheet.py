@@ -2,8 +2,9 @@
 
   python pipeline/sheet.py work/<id> [en|hi]
 
-Draws two frames per shot (just after it starts, and late in the line) and the cover, at full layout size,
-then shrinks them into work/<id>/sheet_<lang>.png. It also checks, in the real page:
+Pictures: frame 0, the last frame of every scene (and the frame after a flash cut), and the cover, all in ONE
+work/<id>/sheet.png (sheet_hi.png for Hindi). No single stills are kept. The layout check also runs at more
+moments than it draws (start, middle, end of every scene). It also checks, in the real page:
   * every framed character stays inside the safe area (not cut off, not under the title, not in the captions)
   * every caption chunk fits in 2 lines, the title lines fit, pills and source tags fit
 Prints "layout ok" or LAYOUT PROBLEMS. Fix the BRIEF (shorter caption chunk, different spot, camera angle) and rerun.
@@ -39,18 +40,19 @@ TEXT_CHECK = """() => {
 def main(W, lang="en"):
     wid = os.path.basename(W.rstrip("/"))
     spec = json.load(open(f"{W}/spec.json")); TL = json.load(open(f"{W}/timeline.json")); LN = TL["lines"]
-    times, labels = [], []
+    times, labels, checks = [0.0], ["frame 0"], []
     for i in spec["order"]:
-        x = LN[i]; s1 = min(x["s1"], TL["dur"])
-        for f, tag in ((.15, "start"), (.8, "late")):
-            times.append(round(x["s0"] + (s1 - x["s0"]) * f, 2)); labels.append(f"{i} {tag}")
+        x = LN[i]; s1 = min(x["s1"], TL["dur"]); at = lambda f: round(x["s0"] + (s1 - x["s0"]) * f, 2)
+        checks += [at(.15), at(.5)]
         th = spec["shots"][i].get("then")
-        if th: times.append(round(x["s0"] + (s1 - x["s0"]) * min(.97, th["at"] + .1), 2)); labels.append(f"{i} then")
+        if th: times.append(at(min(.97, th["at"] + .1))); labels.append(f"{i} after cut")
+        times.append(round(s1 - .05, 2)); labels.append(f"{i} end")
     cv = spec.get("cover") or {"line": spec["order"][-2], "at": .5}; x = LN[cv["line"]]
     tc = round(x["s0"] + (min(x["s1"], TL["dur"]) - x["s0"]) * cv.get("at", .5), 2)
     ims = []; probs = []
     with sync_playwright() as p:
         b, pg = open_story(p, wid, lang, pr=.5)
+        for t in checks: pg.evaluate(f"render({t},{{check:true}})")
         for t, lab in zip(times, labels):
             pg.evaluate(f"render({t},{{check:true}})"); f = f"/tmp/kc_sheet.png"; pg.screenshot(path=f)
             im = Image.open(f).convert("RGB").resize((270, 480)); ImageDraw.Draw(im).text((6, 6), f"{lab} {t}s", fill="yellow"); ims.append(im)
@@ -60,16 +62,21 @@ def main(W, lang="en"):
         pg.evaluate(f"document.body.classList.add('poster');render({tc});document.getElementById('flash').style.opacity=0")
         pg.screenshot(path=f"{W}/cover_raw_{lang}.png")
         b.close()
+    os.remove("/tmp/kc_sheet.png")
+    cv_im = Image.open(f"{W}/cover_raw_{lang}.png").convert("RGB").resize((270, 480)); ImageDraw.Draw(cv_im).text((6, 6), f"COVER {tc}s", fill="yellow"); ims.append(cv_im)
     cols = 6; rows = (len(ims) + cols - 1) // cols
     sheet = Image.new("RGB", (270 * cols, 480 * rows), "white")
     for i, im in enumerate(ims): sheet.paste(im, ((i % cols) * 270, (i // cols) * 480))
-    sheet.save(f"{W}/sheet_{lang}.png")
+    out_png = f"{W}/sheet.png" if lang == "en" else f"{W}/sheet_{lang}.png"
+    for old in (f"{W}/sheet_en.png",) if lang == "en" else ():
+        if os.path.exists(old): os.remove(old)
+    sheet.save(out_png)
     # keep the list short: one line per character problem per shot
     seen = set(); out = []
     for q in probs:
         k = q.split("@")[0] + q.split(":", 1)[-1] if "@" in q else q
         if k not in seen: seen.add(k); out.append(q)
-    print(f"sheet: {W}/sheet_{lang}.png ({len(ims)} frames)")
+    print(f"sheet: {out_png} ({len(ims)} frames)")
     if out: print("LAYOUT PROBLEMS:"); [print("  -", q) for q in out]; return False
     print("layout ok"); return True
 
