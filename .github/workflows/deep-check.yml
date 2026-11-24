@@ -27,7 +27,7 @@ jobs:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN_EN: ${{ secrets.YT_REFRESH_TOKEN_EN }}
           YT_REFRESH_TOKEN_HI: ${{ secrets.YT_REFRESH_TOKEN_HI }}
-          SKIP_YT: ${{ inputs.skip_youtube || (github.event_name == 'push' && '1') || '0' }}
+          SKIP_YT: ${{ inputs.skip_youtube || '0' }}
           ONLY_LANG: ${{ inputs.only_lang }}
         run: python tools/deep_check.py 2>&1 | tee checks/deep_result.txt; exit ${PIPESTATUS[0]}
       - name: Save the result in the repo (so Claude can read it)
