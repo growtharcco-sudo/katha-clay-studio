@@ -1,9 +1,13 @@
 name: Deep check (no public posts)
 on:
+  push:
+    branches: [main]
+    paths: ["checks/deep"]
   workflow_dispatch:
     inputs:
       skip_youtube: { description: "Skip the YouTube test upload", default: "0" }
       only_lang: { description: "Only test one language (en or hi); empty = both", default: "" }
+permissions: { contents: write }
 jobs:
   deep:
     runs-on: ubuntu-latest
@@ -13,7 +17,8 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install -q requests google-api-python-client google-auth
-      - env:
+      - shell: bash
+        env:
           PAGES_BASE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
           IG_USER_ID_EN: ${{ secrets.IG_USER_ID_EN }}
           IG_USER_ID_HI: ${{ secrets.IG_USER_ID_HI }}
@@ -22,6 +27,11 @@ jobs:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN_EN: ${{ secrets.YT_REFRESH_TOKEN_EN }}
           YT_REFRESH_TOKEN_HI: ${{ secrets.YT_REFRESH_TOKEN_HI }}
-          SKIP_YT: ${{ inputs.skip_youtube }}
+          SKIP_YT: ${{ inputs.skip_youtube || (github.event_name == 'push' && '1') || '0' }}
           ONLY_LANG: ${{ inputs.only_lang }}
-        run: python tools/deep_check.py
+        run: python tools/deep_check.py 2>&1 | tee checks/deep_result.txt; exit ${PIPESTATUS[0]}
+      - name: Save the result in the repo (so Claude can read it)
+        if: always()
+        run: |
+          git config user.name kathaclay-bot && git config user.email kathaclay-bot@users.noreply.github.com
+          git add checks/deep_result.txt && git commit -q -m "deep check result" && git pull -q --rebase origin main && git push -q || true
