@@ -1,0 +1,112 @@
+{
+ "en:hook": {
+  "err": 0.0,
+  "heard": "Why is Lord Ganesha worshipped first before every other god?",
+  "dur": 3.97
+ },
+ "en:embrace": {
+  "err": 0.0,
+  "heard": "When Ganesha woke with his elephant head, Mata Parvati lifted him up and embraced him with joy.",
+  "dur": 6.07
+ },
+ "en:pboon": {
+  "err": 0.0,
+  "heard": "She blessed him. You will be worshipped before all the gods.",
+  "dur": 3.21
+ },
+ "en:son": {
+  "err": 0.0,
+  "heard": "Lord Shiva placed his hand on his head and told the gods, \"This is another son of mine.\"",
+  "dur": 5.44
+ },
+ "en:three": {
+  "err": 0.0,
+  "heard": "Then Brahma, Vishnu and Shiva said to all the gods,",
+  "dur": 3.51
+ },
+ "en:first": {
+  "err": 0.0,
+  "heard": "He shall be worshipped first, and we shall be worshipped after Him.",
+  "dur": 3.4
+ },
+ "en:nofruit": {
+  "err": 0.0,
+  "heard": "If other gods are worshipped, and He is not, the fruit of that worship is lost.",
+  "dur": 4.72
+ },
+ "en:obstacles": {
+  "err": 0.167,
+  "heard": "Vignihartha, the remover of all obstacles.",
+  "dur": 2.96
+ },
+ "en:worshipped": {
+  "err": 0.053,
+  "heard": "So Lord Shiva worshiped him, then Vishnu, then Brahma and Mata Parvati, and all the gods bowed to him.",
+  "dur": 6.74
+ },
+ "en:durva": {
+  "err": 0.0,
+  "heard": "and Shiva taught, worship Him with Durva grass, incense, lamps and offerings of food.",
+  "dur": 5.65
+ },
+ "en:end": {
+  "err": 0.667,
+  "heard": "Sri Ganeshaya Namaha.",
+  "dur": 1.61
+ },
+ "hi:hook": {
+  "err": 0.077,
+  "heard": "रब पूजा में सब से पहले भग्वान गनेश की पूजा क्यों होती है",
+  "dur": 4.62
+ },
+ "hi:embrace": {
+  "err": 0.1,
+  "heard": "जब गनेश हाती के सिर्के साथ जागे, तो माता पार्वती ने उठाकर प्रेम से गले लगा लिया.",
+  "dur": 7.06
+ },
+ "hi:pboon": {
+  "err": 0.036,
+  "heard": "उनहो ने वर्दान दिया तुमहारी पुजा सब देव्ताँ से पहले होगी.",
+  "dur": 4.55
+ },
+ "hi:son": {
+  "err": 0.111,
+  "heard": "बबग्वान शिवने उनके सिर्पर हात्रखा और देव्ताउसे कहा यह भी मेरा पुत्र है.",
+  "dur": 5.76
+ },
+ "hi:three": {
+  "err": 0.0,
+  "heard": "तब ब्रह्मा विश्नू और शिवने सभी देव्ताओं से कहा",
+  "dur": 3.84
+ },
+ "hi:first": {
+  "err": 0.0,
+  "heard": "इनकी पूजा सब से पहले होगी और हमारी पूजा इनके बाद",
+  "dur": 4.22
+ },
+ "hi:nofruit": {
+  "err": 0.053,
+  "heard": "अगर इनकी पुजा की ए बिना दुस्रे देव्ताओ की पुजा हो तो उस पुजा का प्ल नश्थ हो जाएगा.",
+  "dur": 6.64
+ },
+ "hi:obstacles": {
+  "err": 0.105,
+  "heard": "विगन हरता यानी सभी विगनो को हरने वाले",
+  "dur": 3.37
+ },
+ "hi:worshipped": {
+  "err": 0.037,
+  "heard": "तब भग्वान शिवने उनकी पूजा की फिर विश्नुने, फिर ब्रहमा और माता पार्वतीने और सब देव्तावने उने प्रनाम किया.",
+  "dur": 8.73
+ },
+ "hi:durva": {
+  "err": 0.097,
+  "heard": "और शिवने बताया उनकी पुजा दूर्वागास, दूप, दीप और नेवेदिसे करो.",
+  "dur": 5.48
+ },
+ "hi:end": {
+  "err": 0.125,
+  "heard": "श्री गने शायनमहा",
+  "dur": 1.62
+ }
+}

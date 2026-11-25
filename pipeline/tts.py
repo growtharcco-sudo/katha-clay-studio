@@ -14,13 +14,15 @@ FIX = {
   "mˌæhɐbhɐɹˈɑːɾə": "məhˌɑːbˈɑːɹətə", "niːlkˈænθə": "nˈiːlkˌʌntə", "bˈæɡɐvˌæɾæm": "bˈʌɡəvətˌʌm",
   "hˈɑːɹ hˈɑːɹ mˈæheɪdəv": "hˈʌɹ hˈʌɹ məhˌɑːdˈeɪv",
   "ɡˈeɪnʃə": "ɡənˈeɪʃə", "mˈɑːɾə": "mˈɑːtɑː", "pɑːɹvˈɑːɾi": "pˈɑːɾvəti", "ɡˈɑːnəz": "ɡˈʌnəz", "ɡˌænɐpˈɑːɾi": "ɡˈʌnəpəti",
-  "ɡænpˈɑːɾi bˈæpə mˈɔːɹɪə": "ɡˈʌnpəti bˈʌppɑː mˈoːɾjɑː", "dᵻfˈiːɾᵻd": "dɪfˈiːtɪd", "fjˈʊɹɹi": "fjˈʊɹi", "dɪdnˌɑːt": "dˈɪd nˈɑːt", "pˈɑːɾvəti": "pˈɑːrvəti", "bˈæk,": "bˈæk,"},
+  "ɡænpˈɑːɾi bˈæpə mˈɔːɹɪə": "ɡˈʌnpəti bˈʌppɑː mˈoːɾjɑː", "dᵻfˈiːɾᵻd": "dɪfˈiːtɪd", "fjˈʊɹɹi": "fjˈʊɹi", "dɪdnˌɑːt": "dˈɪd nˈɑːt", "pˈɑːɾvəti": "pˈɑːrvəti", "bˈæk,": "bˈæk,",
+  "vˈɪɡnɐhˌɑːɹɾə": "vˈɪɡnəhˌʌɾtɑː", "dˈɜːvə": "dˈuːɾvɑː", "ʃɹˈaɪ ɡˈeɪnʃeɪə nˈæmə": "ʃɾˈiː ɡəɳˈeːʃɑːjə nˈʌməhə"},
  "hi": {
   "kːjˈõkɪ": "kjˈõːki", "kːjˈõ": "kjˈõː", "dˌeːʋtˈaːw": "dˌeːʋtˈaːõ", "mahˈaːbhaːɾˌat": "məhˈaːbʰaːɾət",
   "pˈʌr. ɡˈʌjaː": "pˈʌɽ ɡˈʌjaː", "nɪlkˈanʈʰ": "nˈiːlkˌʌɳʈʰ", "ʃɾˌiːmdbʰˈaːɡəʋˌət": "ʃɾˌiːməd bʰˈaːɡəʋət",
   "ˈaːtmaːj": "ˈaːtmaːẽː", "sʋˈʌjən": "sʋˈʌjəm", "mˌahaːdˈeʋ": "məhaːdˈeːʋ", " ki ": " kiː ", " ki": " kiː",
   "kʃˌiːɾsˈaːɡəɾ": "kʃˈiːɾ sˈaːɡəɾ", "mˌəndəɾˈaːcəl": "mˌəndəɾˈaːtʃəl", "hˈʌɾ hˈʌɾ": "hˈəɾ hˈəɾ",
-  "kiːː": "kiː", "ɡˈʌɳəptɪ": "ɡˈəɳəpəti", "cʰˈɪr.kˌaː": "tʃʰˈɪɽkaː", "kʰˈʌr.aː": "kʰˈəɽaː", "bˈʌpːaː mˈoːɾjˌaː": "bˈəppaː mˈoːɾjaː"},
+  "kiːː": "kiː", "ɡˈʌɳəptɪ": "ɡˈəɳəpəti", "cʰˈɪr.kˌaː": "tʃʰˈɪɽkaː", "kʰˈʌr.aː": "kʰˈəɽaː", "bˈʌpːaː mˈoːɾjˌaː": "bˈəppaː mˈoːɾjaː",
+  "ɡˌəɳeːʃˈaːj nˈʌməh": "ɡəɳˈeːʃaːjə nˈʌməhə"},
 }
 
 def phon(k, text, lang):

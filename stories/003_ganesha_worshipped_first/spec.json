@@ -1,0 +1,529 @@
+{
+ "id": "003_ganesha_worshipped_first",
+ "snake": "neck",
+ "throat": 2,
+ "title": {
+  "en": [
+   "Why Is Lord Ganesha",
+   "WORSHIPPED FIRST?"
+  ],
+  "hi": [
+   "हर पूजा में सबसे पहले",
+   "गणेश जी क्यों?"
+  ]
+ },
+ "order": [
+  "hook",
+  "embrace",
+  "pboon",
+  "son",
+  "three",
+  "first",
+  "nofruit",
+  "obstacles",
+  "worshipped",
+  "durva",
+  "end"
+ ],
+ "shots": {
+  "hook": {
+   "set": "kailash",
+   "cast": [
+    {
+     "who": "shiva",
+     "seated": true
+    },
+    {
+     "who": "ganesha",
+     "at": "front",
+     "act": [
+      {
+       "do": "hop",
+       "height": 0.05
+      },
+      {
+       "do": "head_tilt"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "kind": "petals",
+     "at": "front"
+    }
+   ],
+   "cam": {
+    "frame": [
+     "ganesha",
+     "shiva"
+    ],
+    "fit_h": 0.56,
+    "push": 0.1,
+    "center_y": 0.46
+   }
+  },
+  "embrace": {
+   "set": "home",
+   "cast": [
+    {
+     "who": "parvati",
+     "at": "step_left",
+     "yaw": 0.45,
+     "talk": [
+      0.1,
+      0.9
+     ]
+    },
+    {
+     "who": "ganesha",
+     "at": "step_right",
+     "yaw": -0.45
+    }
+   ],
+   "cam": {
+    "frame": [
+     "parvati",
+     "ganesha"
+    ]
+   }
+  },
+  "pboon": {
+   "set": "home",
+   "cast": [
+    {
+     "who": "parvati",
+     "at": "center",
+     "mood": "happy",
+     "pose": [
+      "rest",
+      "bless",
+      0.1,
+      0.3
+     ],
+     "talk": [
+      0.1,
+      0.9
+     ]
+    }
+   ],
+   "cam": {
+    "frame": [
+     "parvati"
+    ],
+    "fit_h": 0.62
+   }
+  },
+  "son": {
+   "set": "home",
+   "sky": [
+    "gold",
+    "gold"
+   ],
+   "cast": [
+    {
+     "who": "ganesha",
+     "at": "center",
+     "act": [
+      {
+       "do": "head_tilt"
+      }
+     ]
+    },
+    {
+     "who": "shiva",
+     "at": "right",
+     "yaw": -0.45,
+     "pose": [
+      "hold",
+      "blessH",
+      0.05,
+      0.25
+     ]
+    },
+    {
+     "who": "parvati",
+     "at": "left",
+     "yaw": 0.4,
+     "pose": [
+      "rest",
+      "bless",
+      0.1,
+      0.3
+     ]
+    }
+   ],
+   "cam": {
+    "frame": [
+     "ganesha",
+     "shiva",
+     "parvati"
+    ]
+   }
+  },
+  "three": {
+   "set": "home",
+   "cast": [
+    {
+     "who": "shiva",
+     "at": "step_left",
+     "yaw": 0.45,
+     "talk": [
+      0.1,
+      0.9
+     ]
+    },
+    {
+     "who": "deva1",
+     "at": "step_right",
+     "yaw": -0.45
+    }
+   ],
+   "cam": {
+    "frame": [
+     "shiva",
+     "deva1"
+    ]
+   }
+  },
+  "first": {
+   "set": "home",
+   "cast": [
+    {
+     "who": "shiva",
+     "at": "step_left",
+     "yaw": 0.45,
+     "talk": [
+      0.1,
+      0.9
+     ]
+    },
+    {
+     "who": "deva1",
+     "at": "step_right",
+     "yaw": -0.45
+    }
+   ],
+   "cam": {
+    "frame": [
+     "shiva",
+     "deva1"
+    ]
+   }
+  },
+  "nofruit": {
+   "set": "home",
+   "cast": [
+    {
+     "who": "shiva",
+     "at": "step_left",
+     "yaw": 0.45,
+     "talk": [
+      0.1,
+      0.9
+     ]
+    },
+    {
+     "who": "deva1",
+     "at": "step_right",
+     "yaw": -0.45
+    }
+   ],
+   "cam": {
+    "frame": [
+     "shiva",
+     "deva1"
+    ]
+   }
+  },
+  "obstacles": {
+   "set": "home",
+   "sky": [
+    "gold",
+    "gold"
+   ],
+   "cast": [
+    {
+     "who": "ganesha",
+     "at": "center",
+     "act": [
+      {
+       "do": "hop",
+       "height": 0.04
+      }
+     ]
+    },
+    {
+     "who": "gana1",
+     "at": "step_left",
+     "yaw": 0.9,
+     "pose": "namaste",
+     "act": [
+      {
+       "do": "bow"
+      }
+     ]
+    },
+    {
+     "who": "gana2",
+     "at": "step_right",
+     "yaw": -0.9,
+     "pose": "namaste",
+     "act": [
+      {
+       "do": "bow"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "kind": "petals",
+     "at": "center"
+    }
+   ],
+   "cam": {
+    "frame": [
+     "ganesha",
+     "gana1",
+     "gana2"
+    ],
+    "orbit": 0.25
+   }
+  },
+  "worshipped": {
+   "set": "home",
+   "sky": [
+    "gold",
+    "gold"
+   ],
+   "cast": [
+    {
+     "who": "ganesha",
+     "at": "center",
+     "act": [
+      {
+       "do": "lift",
+       "y": 0.4
+      }
+     ]
+    },
+    {
+     "who": "deva1",
+     "at": "front_left",
+     "yaw": "away",
+     "pose": "namaste",
+     "act": [
+      {
+       "do": "bow",
+       "amount": 0.35
+      }
+     ],
+     "eyes": "closed"
+    },
+    {
+     "who": "deva2",
+     "at": "front_right",
+     "yaw": "away",
+     "pose": "namaste",
+     "act": [
+      {
+       "do": "bow",
+       "amount": 0.35
+      }
+     ],
+     "eyes": "closed"
+    }
+   ],
+   "fx": [
+    {
+     "kind": "seat",
+     "at": "center"
+    },
+    {
+     "kind": "petals",
+     "at": "center"
+    }
+   ],
+   "cam": {
+    "frame": [
+     "ganesha",
+     "deva1",
+     "deva2"
+    ],
+    "angle": "high"
+   }
+  },
+  "durva": {
+   "set": "home",
+   "sky": [
+    "gold",
+    "gold"
+   ],
+   "cast": [
+    {
+     "who": "ganesha",
+     "at": "center",
+     "act": [
+      {
+       "do": "lift",
+       "y": 0.4
+      }
+     ]
+    },
+    {
+     "who": "deva1",
+     "at": "front_left",
+     "yaw": "away",
+     "pose": "namaste",
+     "act": [
+      {
+       "do": "bow",
+       "amount": 0.35
+      }
+     ],
+     "eyes": "closed"
+    },
+    {
+     "who": "deva2",
+     "at": "front_right",
+     "yaw": "away",
+     "pose": "namaste",
+     "act": [
+      {
+       "do": "bow",
+       "amount": 0.35
+      }
+     ],
+     "eyes": "closed"
+    }
+   ],
+   "fx": [
+    {
+     "kind": "seat",
+     "at": "center"
+    },
+    {
+     "kind": "petals",
+     "at": "center"
+    }
+   ],
+   "cam": {
+    "frame": [
+     "ganesha",
+     "deva1",
+     "deva2"
+    ],
+    "angle": "high"
+   }
+  },
+  "end": {
+   "set": "home",
+   "sky": [
+    "gold",
+    "dawn"
+   ],
+   "cast": [
+    {
+     "who": "ganesha",
+     "at": "center",
+     "act": [
+      {
+       "do": "lift",
+       "y": 0.4
+      },
+      {
+       "do": "head_tilt"
+      }
+     ]
+    },
+    {
+     "who": "shiva",
+     "at": "right",
+     "yaw": -0.3,
+     "pose": [
+      "hold",
+      "blessH",
+      0,
+      0.2
+     ]
+    },
+    {
+     "who": "parvati",
+     "at": "left",
+     "yaw": 0.3,
+     "pose": [
+      "rest",
+      "bless",
+      0,
+      0.2
+     ]
+    }
+   ],
+   "cam": {
+    "frame": [
+     "ganesha",
+     "shiva",
+     "parvati"
+    ],
+    "push": -0.15
+   },
+   "fx": [
+    {
+     "kind": "seat",
+     "at": "center"
+    },
+    {
+     "kind": "petals",
+     "at": "center"
+    }
+   ]
+  }
+ },
+ "pills": [
+  {
+   "line": "embrace",
+   "a": 0.15,
+   "b": 0.9,
+   "on": "parvati",
+   "text": {
+    "en": "MATA PARVATI",
+    "hi": "माता पार्वती"
+   }
+  },
+  {
+   "line": "son",
+   "a": 0.15,
+   "b": 0.7,
+   "on": "shiva",
+   "text": {
+    "en": "LORD SHIVA",
+    "hi": "भगवान शिव"
+   }
+  },
+  {
+   "line": "first",
+   "a": 0.2,
+   "b": 1,
+   "style": "or",
+   "text": {
+    "en": "WORSHIPPED FIRST",
+    "hi": "सबसे पहले पूजा"
+   }
+  },
+  {
+   "line": "durva",
+   "a": 0.25,
+   "b": 0.95,
+   "style": "gr",
+   "text": {
+    "en": "DURVA GRASS",
+    "hi": "दूर्वा घास"
+   }
+  }
+ ],
+ "cover": {
+  "line": "son",
+  "at": 0.6
+ }
+}

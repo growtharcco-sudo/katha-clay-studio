@@ -1,0 +1,670 @@
+{
+ "id": "003_ganesha_worshipped_first",
+ "snake": "neck",
+ "title": {
+  "en": [
+   "Why Is Lord Ganesha",
+   "WORSHIPPED FIRST?"
+  ],
+  "hi": [
+   "हर पूजा में सबसे पहले",
+   "गणेश जी क्यों?"
+  ]
+ },
+ "pills": [
+  {
+   "line": "embrace",
+   "a": 0.15,
+   "b": 0.9,
+   "on": "parvati",
+   "text": {
+    "en": "MATA PARVATI",
+    "hi": "माता पार्वती"
+   }
+  },
+  {
+   "line": "son",
+   "a": 0.15,
+   "b": 0.7,
+   "on": "shiva",
+   "text": {
+    "en": "LORD SHIVA",
+    "hi": "भगवान शिव"
+   }
+  },
+  {
+   "line": "first",
+   "a": 0.2,
+   "b": 1,
+   "style": "or",
+   "text": {
+    "en": "WORSHIPPED FIRST",
+    "hi": "सबसे पहले पूजा"
+   }
+  },
+  {
+   "line": "durva",
+   "a": 0.25,
+   "b": 0.95,
+   "style": "gr",
+   "text": {
+    "en": "DURVA GRASS",
+    "hi": "दूर्वा घास"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Shiva Purana, Rudra Samhita, Kumara Khanda ch. 18, Ganesha crowned as the chief of Ganas (J. L. Shastri translation, wisdomlib)",
+   "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226138.html",
+   "fetched": "2026-11-26",
+   "supports": [
+    "embrace",
+    "pboon",
+    "son",
+    "three",
+    "first",
+    "nofruit",
+    "obstacles",
+    "worshipped",
+    "durva"
+   ]
+  }
+ ],
+ "cover": {
+  "line": "son",
+  "at": 0.6
+ },
+ "post": {
+  "en": {
+   "post_at": "2026-11-27T20:30:00+05:30",
+   "instagram_caption": "Why is Lord Ganesha worshipped first? 🙏\n\nIn the Shiva Purana, Brahma, Vishnu and Shiva themselves declare it: he shall be worshipped first, and they after him. He is the remover of all obstacles.\n\nTold from the Shiva Purana, Rudra Samhita, Kumara Khanda, chapter 18.\n\nWhat do you offer Ganesha first in your home puja?\n\n#kathaclay #ganesha #shivapurana #ganpatibappamorya #hindustories",
+   "youtube_title": "Why Is Lord Ganesha Worshipped First? | Shiva Purana",
+   "youtube_description": "After his elephant head, Mata Parvati, Lord Shiva and the gods bless Ganesha. Brahma, Vishnu and Shiva declare that he shall be worshipped first, as the remover of all obstacles. Told as cute 3D clay animation, from the Shiva Purana.\n\nSources:\n• Shiva Purana, Rudra Samhita, Kumara Khanda, chapter 18, verses 4 to 45 and 61 to 63 (J. L. Shastri translation)\n• https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226138.html\n\n#Ganesha #ShivaPurana #Shorts",
+   "youtube_tags": [
+    "Ganesha",
+    "Ganesh",
+    "Shiva Purana",
+    "Vighnaharta",
+    "Ganapati",
+    "Hindu stories",
+    "clay animation"
+   ]
+  },
+  "hi": {
+   "post_at": "2026-11-27T20:45:00+05:30",
+   "instagram_caption": "हर पूजा में सबसे पहले गणेश जी की पूजा क्यों होती है? 🙏\n\nशिव पुराण में स्वयं ब्रह्मा, विष्णु और शिव ने कहा, इनकी पूजा सबसे पहले होगी, और हमारी इनके बाद। ये सभी विघ्नों को हरने वाले हैं।\n\nशिव पुराण, रुद्र संहिता, कुमार खंड, अध्याय 18 के अनुसार।\n\nआप अपने घर की पूजा में गणेश जी को सबसे पहले क्या चढ़ाते हैं?\n\n#kathaclayhindi #ganesha #ganpatibappamorya #shivpuran #bhakti",
+   "youtube_title": "हर पूजा में सबसे पहले गणेश जी क्यों? | शिव पुराण",
+   "youtube_description": "माता पार्वती, भगवान शिव और देवताओं ने गणेश जी को आशीर्वाद दिया। ब्रह्मा, विष्णु और शिव ने कहा कि इनकी पूजा सबसे पहले होगी, क्योंकि ये सभी विघ्नों को हरने वाले हैं। शिव पुराण की कथा, प्यारे 3D क्ले एनिमेशन में।\n\nSources:\n• Shiva Purana, Rudra Samhita, Kumara Khanda, chapter 18, verses 4 to 45 and 61 to 63 (J. L. Shastri translation)\n• https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226138.html\n\n#Ganesha #ShivPuran #Shorts",
+   "youtube_tags": [
+    "गणेश",
+    "Ganesha",
+    "शिव पुराण",
+    "विघ्नहर्ता",
+    "गणपति",
+    "Hindu stories"
+   ]
+  }
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "en": "Why is Lord Ganesha worshipped first, before every other god?",
+   "hi": "हर पूजा में सबसे पहले भगवान गणेश की पूजा क्यों होती है?",
+   "cap_en": "",
+   "cap_hi": "",
+   "shot": {
+    "set": "kailash",
+    "cast": [
+     {
+      "who": "shiva",
+      "seated": true
+     },
+     {
+      "who": "ganesha",
+      "at": "front",
+      "act": [
+       {
+        "do": "hop",
+        "height": 0.05
+       },
+       {
+        "do": "head_tilt"
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "kind": "petals",
+      "at": "front"
+     }
+    ],
+    "cam": {
+     "frame": [
+      "ganesha",
+      "shiva"
+     ],
+     "fit_h": 0.56,
+     "push": 0.1,
+     "center_y": 0.46
+    }
+   }
+  },
+  {
+   "id": "embrace",
+   "en": "When Ganesha woke with his elephant head, Mata Parvati lifted him up, and embraced him with joy.",
+   "hi": "जब गणेश हाथी के सिर के साथ जागे, तो माता पार्वती ने उन्हें उठाकर, प्रेम से गले लगा लिया।",
+   "cap_en": "When Ganesha woke | with his *elephant head,* | *Mata Parvati* lifted him up, | and embraced him *with joy.*",
+   "cap_hi": "जब गणेश | *हाथी के सिर* के साथ जागे, | तो *माता पार्वती* ने उन्हें उठाकर, | *प्रेम से* गले लगा लिया।",
+   "src_en": "Shiva Purana, Kumara Khanda 18",
+   "src_hi": "शिव पुराण, कुमार खंड 18",
+   "shot": {
+    "set": "home",
+    "cast": [
+     {
+      "who": "parvati",
+      "at": "step_left",
+      "yaw": 0.45,
+      "talk": [
+       0.1,
+       0.9
+      ]
+     },
+     {
+      "who": "ganesha",
+      "at": "step_right",
+      "yaw": -0.45
+     }
+    ],
+    "cam": {
+     "frame": [
+      "parvati",
+      "ganesha"
+     ]
+    }
+   }
+  },
+  {
+   "id": "pboon",
+   "en": "She blessed him: you will be worshipped before all the gods.",
+   "hi": "उन्होंने वरदान दिया, तुम्हारी पूजा सब देवताओं से पहले होगी।",
+   "cap_en": "She blessed him: | you will be worshipped | *before all the gods.*",
+   "cap_hi": "उन्होंने वरदान दिया, | तुम्हारी पूजा | *सब देवताओं से पहले* होगी।",
+   "src_en": "Shiva Purana, Kumara Khanda 18",
+   "src_hi": "शिव पुराण, कुमार खंड 18",
+   "shot": {
+    "set": "home",
+    "cast": [
+     {
+      "who": "parvati",
+      "at": "center",
+      "mood": "happy",
+      "pose": [
+       "rest",
+       "bless",
+       0.1,
+       0.3
+      ],
+      "talk": [
+       0.1,
+       0.9
+      ]
+     }
+    ],
+    "cam": {
+     "frame": [
+      "parvati"
+     ],
+     "fit_h": 0.62
+    }
+   }
+  },
+  {
+   "id": "son",
+   "en": "Lord Shiva placed his hand on his head, and told the gods: this is another son of mine.",
+   "hi": "भगवान शिव ने उनके सिर पर हाथ रखा, और देवताओं से कहा, यह भी मेरा पुत्र है।",
+   "cap_en": "*Lord Shiva* placed his hand | on his head, | and told the gods: | *this is another son of mine.*",
+   "cap_hi": "*भगवान शिव* ने | उनके सिर पर हाथ रखा, | और देवताओं से कहा, | *यह भी मेरा पुत्र है।*",
+   "src_en": "Shiva Purana, Kumara Khanda 18",
+   "src_hi": "शिव पुराण, कुमार खंड 18",
+   "shot": {
+    "set": "home",
+    "sky": [
+     "gold",
+     "gold"
+    ],
+    "cast": [
+     {
+      "who": "ganesha",
+      "at": "center",
+      "act": [
+       {
+        "do": "head_tilt"
+       }
+      ]
+     },
+     {
+      "who": "shiva",
+      "at": "right",
+      "yaw": -0.45,
+      "pose": [
+       "hold",
+       "blessH",
+       0.05,
+       0.25
+      ]
+     },
+     {
+      "who": "parvati",
+      "at": "left",
+      "yaw": 0.4,
+      "pose": [
+       "rest",
+       "bless",
+       0.1,
+       0.3
+      ]
+     }
+    ],
+    "cam": {
+     "frame": [
+      "ganesha",
+      "shiva",
+      "parvati"
+     ]
+    }
+   }
+  },
+  {
+   "id": "three",
+   "en": "Then Brahma, Vishnu and Shiva, said to all the gods:",
+   "hi": "तब ब्रह्मा, विष्णु और शिव ने, सभी देवताओं से कहा,",
+   "cap_en": "Then *Brahma, Vishnu and Shiva,* | said to all the gods:",
+   "cap_hi": "तब *ब्रह्मा, विष्णु और शिव* ने, | सभी देवताओं से कहा,",
+   "src_en": "Shiva Purana, Kumara Khanda 18",
+   "src_hi": "शिव पुराण, कुमार खंड 18",
+   "shot": {
+    "set": "home",
+    "cast": [
+     {
+      "who": "shiva",
+      "at": "step_left",
+      "yaw": 0.45,
+      "talk": [
+       0.1,
+       0.9
+      ]
+     },
+     {
+      "who": "deva1",
+      "at": "step_right",
+      "yaw": -0.45
+     }
+    ],
+    "cam": {
+     "frame": [
+      "shiva",
+      "deva1"
+     ]
+    }
+   }
+  },
+  {
+   "id": "first",
+   "en": "He shall be worshipped first, and we shall be worshipped after him.",
+   "hi": "इनकी पूजा सबसे पहले होगी, और हमारी पूजा इनके बाद।",
+   "cap_en": "He shall be | *worshipped first,* | and we shall be | worshipped after him.",
+   "cap_hi": "इनकी पूजा | *सबसे पहले* होगी, | और हमारी पूजा | इनके बाद।",
+   "src_en": "Shiva Purana, Kumara Khanda 18",
+   "src_hi": "शिव पुराण, कुमार खंड 18",
+   "shot": {
+    "set": "home",
+    "cast": [
+     {
+      "who": "shiva",
+      "at": "step_left",
+      "yaw": 0.45,
+      "talk": [
+       0.1,
+       0.9
+      ]
+     },
+     {
+      "who": "deva1",
+      "at": "step_right",
+      "yaw": -0.45
+     }
+    ],
+    "cam": {
+     "frame": [
+      "shiva",
+      "deva1"
+     ]
+    }
+   }
+  },
+  {
+   "id": "nofruit",
+   "dark": true,
+   "en": "If other gods are worshipped, and he is not, the fruit of that worship is lost.",
+   "hi": "अगर इनकी पूजा किए बिना, दूसरे देवताओं की पूजा हो, तो उस पूजा का फल नष्ट हो जाएगा।",
+   "cap_en": "If other gods are worshipped, | and he is not, | *the fruit of that worship* | *is lost.*",
+   "cap_hi": "अगर इनकी पूजा किए बिना, | दूसरे देवताओं की पूजा हो, | तो उस पूजा का फल | *नष्ट हो जाएगा।*",
+   "src_en": "Shiva Purana, Kumara Khanda 18",
+   "src_hi": "शिव पुराण, कुमार खंड 18",
+   "shot": {
+    "set": "home",
+    "cast": [
+     {
+      "who": "shiva",
+      "at": "step_left",
+      "yaw": 0.45,
+      "talk": [
+       0.1,
+       0.9
+      ]
+     },
+     {
+      "who": "deva1",
+      "at": "step_right",
+      "yaw": -0.45
+     }
+    ],
+    "cam": {
+     "frame": [
+      "shiva",
+      "deva1"
+     ]
+    }
+   }
+  },
+  {
+   "id": "obstacles",
+   "bells": [
+    0.05
+   ],
+   "en": "Vighnaharta. The remover of all obstacles.",
+   "hi": "विघ्नहर्ता। यानी सभी विघ्नों को हरने वाले।",
+   "cap_en": "#Vighnaharta | ~The remover of all obstacles",
+   "cap_hi": "#विघ्नहर्ता | ~यानी सभी विघ्नों को हरने वाले",
+   "src_en": "Shiva Purana, Kumara Khanda 18",
+   "src_hi": "शिव पुराण, कुमार खंड 18",
+   "shot": {
+    "set": "home",
+    "sky": [
+     "gold",
+     "gold"
+    ],
+    "cast": [
+     {
+      "who": "ganesha",
+      "at": "center",
+      "act": [
+       {
+        "do": "hop",
+        "height": 0.04
+       }
+      ]
+     },
+     {
+      "who": "gana1",
+      "at": "step_left",
+      "yaw": 0.9,
+      "pose": "namaste",
+      "act": [
+       {
+        "do": "bow"
+       }
+      ]
+     },
+     {
+      "who": "gana2",
+      "at": "step_right",
+      "yaw": -0.9,
+      "pose": "namaste",
+      "act": [
+       {
+        "do": "bow"
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "kind": "petals",
+      "at": "center"
+     }
+    ],
+    "cam": {
+     "frame": [
+      "ganesha",
+      "gana1",
+      "gana2"
+     ],
+     "orbit": 0.25
+    }
+   }
+  },
+  {
+   "id": "worshipped",
+   "bells": [
+    0.02
+   ],
+   "en": "So Lord Shiva worshipped him, then Vishnu, then Brahma and Mata Parvati, and all the gods bowed to him.",
+   "hi": "तब भगवान शिव ने उनकी पूजा की, फिर विष्णु ने, फिर ब्रह्मा और माता पार्वती ने, और सब देवताओं ने उन्हें प्रणाम किया।",
+   "cap_en": "So *Lord Shiva* worshipped him, | then Vishnu, | then Brahma and Mata Parvati, | and *all the gods bowed to him.*",
+   "cap_hi": "तब *भगवान शिव* ने उनकी पूजा की, | फिर विष्णु ने, | फिर ब्रह्मा और माता पार्वती ने, | और *सब देवताओं ने उन्हें प्रणाम किया।*",
+   "src_en": "Shiva Purana, Kumara Khanda 18",
+   "src_hi": "शिव पुराण, कुमार खंड 18",
+   "shot": {
+    "set": "home",
+    "sky": [
+     "gold",
+     "gold"
+    ],
+    "cast": [
+     {
+      "who": "ganesha",
+      "at": "center",
+      "act": [
+       {
+        "do": "lift",
+        "y": 0.4
+       }
+      ]
+     },
+     {
+      "who": "deva1",
+      "at": "front_left",
+      "yaw": "away",
+      "pose": "namaste",
+      "act": [
+       {
+        "do": "bow",
+        "amount": 0.35
+       }
+      ],
+      "eyes": "closed"
+     },
+     {
+      "who": "deva2",
+      "at": "front_right",
+      "yaw": "away",
+      "pose": "namaste",
+      "act": [
+       {
+        "do": "bow",
+        "amount": 0.35
+       }
+      ],
+      "eyes": "closed"
+     }
+    ],
+    "fx": [
+     {
+      "kind": "seat",
+      "at": "center"
+     },
+     {
+      "kind": "petals",
+      "at": "center"
+     }
+    ],
+    "cam": {
+     "frame": [
+      "ganesha",
+      "deva1",
+      "deva2"
+     ],
+     "angle": "high"
+    }
+   }
+  },
+  {
+   "id": "durva",
+   "en": "And Shiva taught: worship him with durva grass, incense, lamps and offerings of food.",
+   "hi": "और शिव ने बताया, उनकी पूजा दूर्वा घास, धूप, दीप और नैवेद्य से करो।",
+   "cap_en": "And Shiva taught: | worship him with *durva grass,* | incense, lamps | and offerings of food.",
+   "cap_hi": "और शिव ने बताया, | उनकी पूजा *दूर्वा घास,* | धूप, दीप | और नैवेद्य से करो।",
+   "src_en": "Shiva Purana, Kumara Khanda 18",
+   "src_hi": "शिव पुराण, कुमार खंड 18",
+   "shot": {
+    "set": "home",
+    "sky": [
+     "gold",
+     "gold"
+    ],
+    "cast": [
+     {
+      "who": "ganesha",
+      "at": "center",
+      "act": [
+       {
+        "do": "lift",
+        "y": 0.4
+       }
+      ]
+     },
+     {
+      "who": "deva1",
+      "at": "front_left",
+      "yaw": "away",
+      "pose": "namaste",
+      "act": [
+       {
+        "do": "bow",
+        "amount": 0.35
+       }
+      ],
+      "eyes": "closed"
+     },
+     {
+      "who": "deva2",
+      "at": "front_right",
+      "yaw": "away",
+      "pose": "namaste",
+      "act": [
+       {
+        "do": "bow",
+        "amount": 0.35
+       }
+      ],
+      "eyes": "closed"
+     }
+    ],
+    "fx": [
+     {
+      "kind": "seat",
+      "at": "center"
+     },
+     {
+      "kind": "petals",
+      "at": "center"
+     }
+    ],
+    "cam": {
+     "frame": [
+      "ganesha",
+      "deva1",
+      "deva2"
+     ],
+     "angle": "high"
+    }
+   }
+  },
+  {
+   "id": "end",
+   "src_plain": true,
+   "no_claim": true,
+   "en": "Shri Ganeshaya Namah!",
+   "hi": "श्री गणेशाय नमः!",
+   "cap_en": "*Shri Ganeshaya Namah!*",
+   "cap_hi": "*श्री गणेशाय नमः!*",
+   "src_en": "As told in the Shiva Purana",
+   "src_hi": "शिव पुराण के अनुसार",
+   "shot": {
+    "set": "home",
+    "sky": [
+     "gold",
+     "dawn"
+    ],
+    "cast": [
+     {
+      "who": "ganesha",
+      "at": "center",
+      "act": [
+       {
+        "do": "lift",
+        "y": 0.4
+       },
+       {
+        "do": "head_tilt"
+       }
+      ]
+     },
+     {
+      "who": "shiva",
+      "at": "right",
+      "yaw": -0.3,
+      "pose": [
+       "hold",
+       "blessH",
+       0,
+       0.2
+      ]
+     },
+     {
+      "who": "parvati",
+      "at": "left",
+      "yaw": 0.3,
+      "pose": [
+       "rest",
+       "bless",
+       0,
+       0.2
+      ]
+     }
+    ],
+    "cam": {
+     "frame": [
+      "ganesha",
+      "shiva",
+      "parvati"
+     ],
+     "push": -0.15
+    },
+    "fx": [
+     {
+      "kind": "seat",
+      "at": "center"
+     },
+     {
+      "kind": "petals",
+      "at": "center"
+     }
+    ]
+   }
+  }
+ ]
+}
