@@ -1,0 +1,480 @@
+{
+ "id": "002_ganesha_elephant_head",
+ "snake": "neck",
+ "title": {
+  "en": [
+   "Why Does Lord Ganesha Have",
+   "AN ELEPHANT HEAD?"
+  ],
+  "hi": [
+   "भगवान गणेश का सिर",
+   "हाथी का क्यों है?"
+  ]
+ },
+ "beats": [
+  {
+   "id": "hook",
+   "say": {
+    "en": "Why does Lord Ganesha have an elephant's head?",
+    "hi": "भगवान गणेश का सिर हाथी का क्यों है?"
+   },
+   "cap": {
+    "en": "",
+    "hi": ""
+   },
+   "show": {
+    "kind": "hook",
+    "child": "ganesha"
+   }
+  },
+  {
+   "id": "create",
+   "say": {
+    "en": "Mata Parvati once shaped a boy from her own body, blessed him, and said: you are my son.",
+    "hi": "एक बार माता पार्वती ने अपने शरीर के मैल से एक बालक बनाया, उसे आशीर्वाद दिया, और कहा, तुम मेरे पुत्र हो।"
+   },
+   "cap": {
+    "en": "*Mata Parvati* once shaped a boy | *from her own body,* | blessed him, and said: | *you are my son.*",
+    "hi": "एक बार *माता पार्वती* ने | अपने शरीर के मैल से | *एक बालक* बनाया, | उसे आशीर्वाद दिया, | और कहा, *तुम मेरे पुत्र हो।*"
+   },
+   "src": {
+    "en": "Shiva Purana, Kumara Khanda 13",
+    "hi": "शिव पुराण, कुमार खंड 13"
+   },
+   "show": {
+    "kind": "create",
+    "maker": "parvati",
+    "made": "boy"
+   }
+  },
+  {
+   "id": "guard",
+   "say": {
+    "en": "As she went for her bath, she placed him at her door, and said: let no one in.",
+    "hi": "स्नान करने जाते हुए, उन्होंने उसे द्वार पर खड़ा किया, और कहा, किसी को भीतर मत आने देना।"
+   },
+   "cap": {
+    "en": "As she went for her bath, | she placed him *at her door,* | and said: | *let no one in.*",
+    "hi": "स्नान करने जाते हुए, | उन्होंने उसे *द्वार पर* खड़ा किया, | और कहा, | *किसी को भीतर मत आने देना।*"
+   },
+   "src": {
+    "en": "Shiva Purana, Kumara Khanda 13",
+    "hi": "शिव पुराण, कुमार खंड 13"
+   },
+   "show": {
+    "kind": "guard",
+    "leaver": "parvati",
+    "guard": "boy"
+   }
+  },
+  {
+   "id": "arrive",
+   "say": {
+    "en": "Then Lord Shiva came. The boy did not know him, and stopped him at the door.",
+    "hi": "तभी भगवान शिव आए। बालक उन्हें नहीं पहचानता था, और उसने उन्हें द्वार पर रोक दिया।"
+   },
+   "cap": {
+    "en": "Then *Lord Shiva* came. | The boy *did not know him,* | and stopped him at the door.",
+    "hi": "तभी *भगवान शिव* आए। | बालक उन्हें *नहीं पहचानता था,* | और उसने उन्हें | द्वार पर रोक दिया।"
+   },
+   "src": {
+    "en": "Shiva Purana, Kumara Khanda 13",
+    "hi": "शिव पुराण, कुमार खंड 13"
+   },
+   "show": {
+    "kind": "arrive",
+    "who": "shiva",
+    "waiting": "boy"
+   }
+  },
+  {
+   "id": "battle",
+   "say": {
+    "en": "Shiva's ganas fought him, but the boy defeated them all.",
+    "hi": "शिव के गणों ने उससे युद्ध किया, पर बालक ने सबको हरा दिया।"
+   },
+   "cap": {
+    "en": "Shiva's *ganas* fought him, | but the boy | *defeated them all.*",
+    "hi": "शिव के *गणों* ने उससे युद्ध किया, | पर बालक ने | *सबको हरा दिया।*"
+   },
+   "src": {
+    "en": "Shiva Purana, Kumara Khanda 14 and 16",
+    "hi": "शिव पुराण, कुमार खंड 14 और 16"
+   },
+   "show": {
+    "kind": "clash",
+    "hero": "boy",
+    "foes": [
+     "gana1",
+     "gana2",
+     "gana3"
+    ]
+   }
+  },
+  {
+   "id": "strike",
+   "say": {
+    "en": "At last, Shiva cut off the boy's head with his trident.",
+    "hi": "अंत में, शिव ने अपने त्रिशूल से बालक का सिर काट दिया।"
+   },
+   "cap": {
+    "en": "At last, | Shiva cut off the boy's head | *with his trident.*",
+    "hi": "अंत में, | शिव ने अपने *त्रिशूल* से | बालक का सिर काट दिया।"
+   },
+   "src": {
+    "en": "Shiva Purana, Kumara Khanda 16",
+    "hi": "शिव पुराण, कुमार खंड 16"
+   },
+   "show": {
+    "kind": "flash_cut",
+    "who": "shiva"
+   }
+  },
+  {
+   "id": "fury",
+   "say": {
+    "en": "When Parvati learned this, she was filled with fury, and all the gods were afraid.",
+    "hi": "यह जानकर माता पार्वती क्रोध से भर उठीं, और सारे देवता भयभीत हो गए।"
+   },
+   "cap": {
+    "en": "When Parvati learned this, | she was filled with *fury,* | and all the gods | *were afraid.*",
+    "hi": "यह जानकर माता पार्वती | *क्रोध से भर उठीं,* | और सारे देवता | *भयभीत हो गए।*"
+   },
+   "src": {
+    "en": "Shiva Purana, Kumara Khanda 17",
+    "hi": "शिव पुराण, कुमार खंड 17"
+   },
+   "dark": true,
+   "show": {
+    "kind": "rage",
+    "who": "parvati",
+    "witnesses": [
+     "deva1",
+     "deva2"
+    ]
+   }
+  },
+  {
+   "id": "demand",
+   "say": {
+    "en": "She said: bring my son to life again, and give him a place of honor.",
+    "hi": "उन्होंने कहा, मेरे पुत्र को फिर से जीवित करो, और उसे सम्मान का स्थान दो।"
+   },
+   "cap": {
+    "en": "She said: | *bring my son to life again,* | and give him | *a place of honor.*",
+    "hi": "उन्होंने कहा, | *मेरे पुत्र को फिर से जीवित करो,* | और उसे | *सम्मान का स्थान दो।*"
+   },
+   "src": {
+    "en": "Shiva Purana, Kumara Khanda 17",
+    "hi": "शिव पुराण, कुमार खंड 17"
+   },
+   "show": {
+    "kind": "demand",
+    "who": "parvati"
+   }
+  },
+  {
+   "id": "north",
+   "say": {
+    "en": "So Shiva told the gods: go north, and bring the head of the first being you meet.",
+    "hi": "तब शिव ने देवताओं से कहा, उत्तर दिशा में जाओ, और जो पहला प्राणी मिले, उसका सिर ले आओ।"
+   },
+   "cap": {
+    "en": "So Shiva told the gods: | *go north,* | and bring the head of | *the first being you meet.*",
+    "hi": "तब शिव ने देवताओं से कहा, | *उत्तर दिशा में जाओ,* | और जो *पहला प्राणी* मिले, | उसका सिर ले आओ।"
+   },
+   "src": {
+    "en": "Shiva Purana, Kumara Khanda 17",
+    "hi": "शिव पुराण, कुमार खंड 17"
+   },
+   "show": {
+    "kind": "send",
+    "leader": "shiva",
+    "group": [
+     "deva1",
+     "deva2",
+     "deva3"
+    ]
+   }
+  },
+  {
+   "id": "tusk",
+   "say": {
+    "en": "The first one they met, was an elephant with a single tusk.",
+    "hi": "उन्हें सबसे पहले, एक दाँत वाला हाथी मिला।"
+   },
+   "cap": {
+    "en": "The first one they met, | was *an elephant* | *with a single tusk.*",
+    "hi": "उन्हें सबसे पहले, | *एक दाँत वाला* | *हाथी* मिला।"
+   },
+   "src": {
+    "en": "Shiva Purana, Kumara Khanda 17",
+    "hi": "शिव पुराण, कुमार खंड 17"
+   },
+   "show": {
+    "kind": "discover",
+    "found": "elephant",
+    "finders": [
+     "deva1",
+     "deva2"
+    ]
+   }
+  },
+  {
+   "id": "revive",
+   "say": {
+    "en": "They placed its head on the boy, sprinkled holy water, and he woke up, as if from sleep.",
+    "hi": "उन्होंने वह सिर बालक के शरीर पर लगाया, पवित्र जल छिड़का, और वह मानो नींद से जाग उठा।"
+   },
+   "cap": {
+    "en": "They placed its head on the boy, | sprinkled *holy water,* | and he *woke up,* | as if from sleep.",
+    "hi": "उन्होंने वह सिर | बालक के शरीर पर लगाया, | *पवित्र जल* छिड़का, | और वह मानो *नींद से जाग उठा।*"
+   },
+   "src": {
+    "en": "Shiva Purana, Kumara Khanda 17",
+    "hi": "शिव पुराण, कुमार खंड 17"
+   },
+   "bells": [
+    0.62
+   ],
+   "show": {
+    "kind": "reveal",
+    "who": "ganesha",
+    "helpers": [
+     "deva1",
+     "deva2"
+    ]
+   }
+  },
+  {
+   "id": "son",
+   "say": {
+    "en": "Shiva accepted him as his son, and made him the leader of his ganas.",
+    "hi": "शिव ने उसे अपना पुत्र स्वीकार किया, और अपने गणों का स्वामी बनाया।"
+   },
+   "cap": {
+    "en": "Shiva accepted him | *as his son,* | and made him the leader | *of his ganas.*",
+    "hi": "शिव ने उसे | *अपना पुत्र* स्वीकार किया, | और अपने *गणों का स्वामी* | बनाया।"
+   },
+   "src": {
+    "en": "Shiva Purana, Kumara Khanda 18",
+    "hi": "शिव पुराण, कुमार खंड 18"
+   },
+   "show": {
+    "kind": "family",
+    "center": "ganesha",
+    "right": "shiva",
+    "left": "parvati"
+   }
+  },
+  {
+   "id": "name",
+   "say": {
+    "en": "Ganapati. Lord of the ganas.",
+    "hi": "गणपति। यानी गणों के स्वामी।"
+   },
+   "cap": {
+    "en": "#Ganapati | ~Lord of the ganas",
+    "hi": "#गणपति | ~यानी गणों के स्वामी"
+   },
+   "src": {
+    "en": "Shiva Purana, Kumara Khanda 18",
+    "hi": "शिव पुराण, कुमार खंड 18"
+   },
+   "bells": [
+    0.05
+   ],
+   "show": {
+    "kind": "name_card",
+    "who": "ganesha",
+    "group": [
+     "gana1",
+     "gana2"
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "say": {
+    "en": "Ganpati Bappa Morya!",
+    "hi": "गणपति बप्पा मोरया!"
+   },
+   "cap": {
+    "en": "*Ganpati Bappa Morya!*",
+    "hi": "*गणपति बप्पा मोरया!*"
+   },
+   "src": {
+    "en": "As told in the Shiva Purana",
+    "hi": "शिव पुराण के अनुसार"
+   },
+   "src_plain": true,
+   "no_claim": true,
+   "show": {
+    "kind": "finale",
+    "center": "ganesha",
+    "right": "shiva",
+    "left": "parvati"
+   }
+  }
+ ],
+ "pills": [
+  {
+   "line": "create",
+   "a": 0.15,
+   "b": 0.95,
+   "on": "parvati",
+   "text": {
+    "en": "MATA PARVATI",
+    "hi": "माता पार्वती"
+   }
+  },
+  {
+   "line": "arrive",
+   "a": 0.15,
+   "b": 0.6,
+   "on": "shiva",
+   "text": {
+    "en": "LORD SHIVA",
+    "hi": "भगवान शिव"
+   }
+  },
+  {
+   "line": "battle",
+   "a": 0.1,
+   "b": 0.5,
+   "on": "gana2",
+   "style": "or",
+   "text": {
+    "en": "SHIVA'S GANAS",
+    "hi": "शिव के गण"
+   }
+  },
+  {
+   "line": "north",
+   "a": 0.1,
+   "b": 0.55,
+   "on": "deva2",
+   "text": {
+    "en": "DEVAS",
+    "hi": "देवता"
+   }
+  },
+  {
+   "line": "north",
+   "a": 0.35,
+   "b": 1,
+   "style": "gr",
+   "text": {
+    "en": "NORTH",
+    "hi": "उत्तर दिशा"
+   }
+  },
+  {
+   "line": "tusk",
+   "a": 0.55,
+   "b": 1,
+   "on": "elephant",
+   "style": "or",
+   "text": {
+    "en": "ONE TUSK",
+    "hi": "एक दाँत"
+   }
+  },
+  {
+   "line": "revive",
+   "a": 0.85,
+   "b": 1.05,
+   "on": "ganesha",
+   "style": "or",
+   "text": {
+    "en": "SHRI GANESHA",
+    "hi": "श्री गणेश"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Shiva Purana, Rudra Samhita, Kumara Khanda ch. 13, The birth of Ganesha (J. L. Shastri translation, wisdomlib)",
+   "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226133.html",
+   "fetched": "2026-11-26",
+   "supports": [
+    "create",
+    "guard",
+    "arrive"
+   ]
+  },
+  {
+   "title": "Shiva Purana, Kumara Khanda ch. 14, The Ganas argue and wrangle",
+   "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226134.html",
+   "fetched": "2026-11-26",
+   "supports": [
+    "battle"
+   ]
+  },
+  {
+   "title": "Shiva Purana, Kumara Khanda ch. 16, The head of Ganesha is chopped off during the battle",
+   "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226136.html",
+   "fetched": "2026-11-26",
+   "supports": [
+    "battle",
+    "strike"
+   ]
+  },
+  {
+   "title": "Shiva Purana, Kumara Khanda ch. 17, The Resuscitation of Ganesha",
+   "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226137.html",
+   "fetched": "2026-11-26",
+   "supports": [
+    "fury",
+    "demand",
+    "north",
+    "tusk",
+    "revive"
+   ]
+  },
+  {
+   "title": "Shiva Purana, Kumara Khanda ch. 18, Ganesha crowned as the chief of Ganas",
+   "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226138.html",
+   "fetched": "2026-11-26",
+   "supports": [
+    "son",
+    "name"
+   ]
+  }
+ ],
+ "cover": {
+  "line": "son",
+  "at": 0.5
+ },
+ "post": {
+  "en": {
+   "post_at": "2026-11-26T20:30:00+05:30",
+   "instagram_caption": "Why does Lord Ganesha have an elephant's head? 🐘\n\nMata Parvati shaped a boy and set him at her door. He stopped even Lord Shiva. What happened next gave the world Ganapati, lord of the ganas.\n\nTold from the Shiva Purana, Rudra Samhita, Kumara Khanda, chapters 13 to 18.\n\nDid you know this story as a child?\n\n#kathaclay #ganesha #shivapurana #ganpatibappamorya #hindustories",
+   "youtube_title": "Why Does Lord Ganesha Have an Elephant Head? | Shiva Purana",
+   "youtube_description": "Mata Parvati shapes a boy and sets him at her door. He stops even Lord Shiva, and the story that follows gives the world Ganapati, lord of the ganas. Told as cute 3D clay animation, from the Shiva Purana.\n\nSources:\n• Shiva Purana, Rudra Samhita, Kumara Khanda, chapters 13 to 18 (J. L. Shastri translation)\n• https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226133.html\n• https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226137.html\n• https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226138.html\n\n#Ganesha #ShivaPurana #Shorts",
+   "youtube_tags": [
+    "Ganesha",
+    "Ganesh",
+    "Shiva Purana",
+    "Parvati",
+    "Ganapati",
+    "Hindu stories",
+    "clay animation"
+   ]
+  },
+  "hi": {
+   "post_at": "2026-11-26T20:45:00+05:30",
+   "instagram_caption": "भगवान गणेश का सिर हाथी का क्यों है? 🐘\n\nमाता पार्वती ने एक बालक बनाया और उसे द्वार पर खड़ा किया। उसने भगवान शिव को भी रोक दिया। आगे जो हुआ, उससे संसार को गणपति मिले, गणों के स्वामी।\n\nशिव पुराण, रुद्र संहिता, कुमार खंड, अध्याय 13 से 18 के अनुसार।\n\nक्या आपने यह कथा बचपन में सुनी थी?\n\n#kathaclayhindi #ganesha #ganpatibappamorya #shivpuran #bhakti",
+   "youtube_title": "भगवान गणेश का सिर हाथी का क्यों है? | शिव पुराण",
+   "youtube_description": "माता पार्वती ने एक बालक बनाया और उसे द्वार पर खड़ा किया। उसने भगवान शिव को भी रोक दिया, और आगे जो हुआ उससे संसार को गणपति मिले। शिव पुराण की कथा, प्यारे 3D क्ले एनिमेशन में।\n\nSources:\n• Shiva Purana, Rudra Samhita, Kumara Khanda, chapters 13 to 18 (J. L. Shastri translation)\n• https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226133.html\n• https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226137.html\n• https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226138.html\n\n#Ganesha #ShivPuran #Shorts",
+   "youtube_tags": [
+    "गणेश",
+    "Ganesha",
+    "शिव पुराण",
+    "पार्वती",
+    "गणपति",
+    "Hindu stories"
+   ]
+  }
+ }
+}

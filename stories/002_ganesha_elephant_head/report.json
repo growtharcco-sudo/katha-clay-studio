@@ -1,0 +1,142 @@
+{
+ "en:hook": {
+  "err": 0.0,
+  "heard": "Why does Lord Ganesha have an elephant's head?",
+  "dur": 2.83
+ },
+ "en:create": {
+  "err": 0.0,
+  "heard": "Mata Parvati once shaped a boy from her own body, blessed him and said, \"You are my son.\"",
+  "dur": 5.78
+ },
+ "en:guard": {
+  "err": 0.0,
+  "heard": "As she went for her bath, she placed him at her door and said, \"Let no one in.\"",
+  "dur": 4.49
+ },
+ "en:arrive": {
+  "err": 0.0,
+  "heard": "Then Lord Shiva came. The boy did not know him and stopped him at the door.",
+  "dur": 4.44
+ },
+ "en:battle": {
+  "err": 0.091,
+  "heard": "Shiva's gunners fought him, but the boy defeated them all.",
+  "dur": 3.24
+ },
+ "en:strike": {
+  "err": 0.0,
+  "heard": "At last, Shiva cut off the boy's head with his Trident.",
+  "dur": 3.08
+ },
+ "en:fury": {
+  "err": 0.0,
+  "heard": "When Parvati learned this, she was filled with fury and all the gods were afraid.",
+  "dur": 4.64
+ },
+ "en:demand": {
+  "err": 0.0,
+  "heard": "She said, \"Bring my son to life again and give him a place of honor.\"",
+  "dur": 4.08
+ },
+ "en:north": {
+  "err": 0.0,
+  "heard": "So Shiva told the gods, \"Go north and bring the head of the first being you meet.\"",
+  "dur": 4.66
+ },
+ "en:tusk": {
+  "err": 0.0,
+  "heard": "The first one they met was an elephant with a single tusk.",
+  "dur": 3.47
+ },
+ "en:revive": {
+  "err": 0.0,
+  "heard": "They placed its head on the boy, sprinkled holy water, and he woke up as if from sleep.",
+  "dur": 5.37
+ },
+ "en:son": {
+  "err": 0.071,
+  "heard": "Shiva accepted him as his son and made him the leader of his gunners.",
+  "dur": 4.38
+ },
+ "en:name": {
+  "err": 0.2,
+  "heard": "Ganapati, Lord of the Gunners",
+  "dur": 2.01
+ },
+ "en:end": {
+  "err": 0.333,
+  "heard": "Ganpati Bappa Moria",
+  "dur": 1.77
+ },
+ "hi:hook": {
+  "err": 0.062,
+  "heard": "भग्वान गनेश का सर हातिका क्यो है",
+  "dur": 2.96
+ },
+ "hi:create": {
+  "err": 0.02,
+  "heard": "इक बार माता पार्व्ती ने अपने शरीर के मेल से एक बालक बनाया उसे आशिर्वाद दिया और कहा तुम मेरे पुत्र हो",
+  "dur": 8.27
+ },
+ "hi:guard": {
+  "err": 0.024,
+  "heard": "सनान करने जाते हुए, उनहोने उसे द्वार पर खजा किया और कहा, किसी को भीतर मत आने देना.",
+  "dur": 6.83
+ },
+ "hi:arrive": {
+  "err": 0.098,
+  "heard": "तभी भग्वान शिव आए भालक उने नहीं पहचानता ता और उसने उने द्वार पर रोक दिया.",
+  "dur": 6.78
+ },
+ "hi:battle": {
+  "err": 0.111,
+  "heard": "शिवके गनोंने उसे यूध किया पर भालक ने सब को हरा दिया.",
+  "dur": 4.32
+ },
+ "hi:strike": {
+  "err": 0.083,
+  "heard": "अन्त में शिवने अपने त्रिशूल से बालक का सिर कार दिया.",
+  "dur": 4.01
+ },
+ "hi:fury": {
+  "err": 0.118,
+  "heard": "यहे जानकर माता परवती क्रोद से बर उटी, और सारे देवता भैभीत हो गए.",
+  "dur": 5.69
+ },
+ "hi:demand": {
+  "err": 0.061,
+  "heard": "उन्होंने कहा, मेरे पुत्र को फिर से जीविट करो और उसे सम्मान का स्फान दो.",
+  "dur": 5.45
+ },
+ "hi:north": {
+  "err": 0.05,
+  "heard": "तब शिवने देव्ताव से कहा, उत्तर दिशा में जाओ, और जो पहला प्रानी मिले, उसका सिर ले आव.",
+  "dur": 6.69
+ },
+ "hi:tusk": {
+  "err": 0.053,
+  "heard": "उनहे सब से पहले एक दांत वाला हाती मिला",
+  "dur": 3.23
+ },
+ "hi:revive": {
+  "err": 0.095,
+  "heard": "उनहोने वहे सेर बालक के शरीर पर लगाया, पवित्र जल छिंका और वहे मानो नीन से जाएग उता.",
+  "dur": 6.96
+ },
+ "hi:son": {
+  "err": 0.0,
+  "heard": "शिवने उसे अपना पुत्र स्विकार किया और अपने गनो का स्वामी बनाया.",
+  "dur": 5.01
+ },
+ "hi:name": {
+  "err": 0.0,
+  "heard": "गन्पती यानी गनो के स्वामी",
+  "dur": 2.23
+ },
+ "hi:end": {
+  "err": 0.0,
+  "heard": "गन्पती बप्पा मुर्या",
+  "dur": 1.75
+ }
+}
