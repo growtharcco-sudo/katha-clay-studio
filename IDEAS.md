@@ -3,9 +3,9 @@ Cast must be in engine/approved.json. Approved: shiva, parvati, boy, ganesha, el
 
 ## Ready (approved cast only)
 - [x] 001 Neelkantha: why Shiva's throat is blue (Bhagavata Purana 8.7)
-- [ ] Why Ganesha has an elephant head (Shiva Purana, Rudra Samhita, Kumara Khanda 13 to 18). Brief already
+- [x] 002 Why Ganesha has an elephant head (Shiva Purana, Rudra Samhita, Kumara Khanda 13 to 18). Brief already
       written and checked: copy briefs/000_kit_example.json, refetch the source, write real post captions.
-- [ ] Why Ganesha is worshipped first (the boon at his rebirth, Shiva Purana Kumara Khanda 18)
+- [x] 003 Why Ganesha is worshipped first (the boon at his rebirth, Shiva Purana Kumara Khanda 18)
 - [ ] The Saptarishis test Parvati's devotion before her marriage to Shiva (Shiva Purana, Parvati Khanda)
 - [ ] Parvati's tapas: how she won Shiva by devotion (Shiva Purana, Parvati Khanda)
 - [ ] Shiva's wedding procession of ganas (Shiva Purana, Parvati Khanda)
