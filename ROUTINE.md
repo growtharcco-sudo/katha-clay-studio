@@ -53,6 +53,16 @@ python pipeline/sheet.py work/<id> hi           # until "layout ok"
 Read `work/<id>/sheet.png` ONCE (frame 0, the end of every scene, and the cover on one image). Never open single
 stills. Check: right characters, right hand blessing, nothing cut off, nothing disrespectful. Fix the brief, rebuild.
 
+## 4b. Independent review (mandatory, never skip)
+Spawn a FRESH agent (Agent tool, general-purpose) that has not seen your work, with this prompt:
+"Read REVIEW.md in <repo path> and review story <id> exactly as it says. Answer only in its format."
+- REVIEW PASS: go to step 5.
+- REVIEW FAIL: fix every point in the brief, rebuild (step 4), and review again with a NEW agent.
+- Still FAIL after 2 fixes: do NOT publish it. Tell Samrit in one line what the reviewer found and use the
+  next story in IDEAS.md instead.
+Never argue the reviewer down on scripture. If it says a line is not in the text and you cannot show the exact
+passage, remove the line.
+
 ## 5. Hand it to GitHub
 ```
 python pipeline/publish_story.py <id>
