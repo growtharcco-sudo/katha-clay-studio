@@ -1,0 +1,625 @@
+{
+ "id": "005_saptarishi_test",
+ "snake": "neck",
+ "title": {
+  "en": [
+   "How the Seven Sages",
+   "TESTED MATA PARVATI"
+  ],
+  "hi": [
+   "सप्तर्षियों ने कैसे ली",
+   "माता की परीक्षा?"
+  ]
+ },
+ "beats": [
+  {
+   "id": "hook",
+   "say": {
+    "en": "Lord Shiva sent the seven sages to test Mata Parvati. Would her devotion hold?",
+    "hi": "भगवान शिव ने सात ऋषियों को माता पार्वती की परीक्षा लेने भेजा। क्या उनकी भक्ति अडिग रहेगी?"
+   },
+   "cap": {
+    "en": "",
+    "hi": ""
+   },
+   "show": {
+    "kind": "custom",
+    "set": "forest",
+    "sky": [
+     "dawn",
+     "gold"
+    ],
+    "cast": [
+     {
+      "who": "parvati",
+      "at": "center",
+      "pose": "namaste",
+      "eyes": "closed"
+     },
+     {
+      "who": "sage1",
+      "at": "left",
+      "yaw": 0.9
+     },
+     {
+      "who": "sage2",
+      "at": "right",
+      "yaw": -0.9
+     }
+    ],
+    "fx": [
+     {
+      "kind": "petals",
+      "at": "center"
+     }
+    ],
+    "cam": {
+     "frame": [
+      "parvati",
+      "sage1",
+      "sage2"
+     ],
+     "push": 0.1
+    }
+   }
+  },
+  {
+   "id": "astonish",
+   "say": {
+    "en": "Lord Shiva wished to test Mata Parvati's penance.",
+    "hi": "भगवान शिव ने माता पार्वती के तप की परीक्षा लेनी चाही।"
+   },
+   "cap": {
+    "en": "*Lord Shiva* wished to test | Mata Parvati's *penance.*",
+    "hi": "*भगवान शिव* ने | माता पार्वती के तप की | *परीक्षा* लेनी चाही।"
+   },
+   "src": {
+    "en": "Shiva Purana, Rudra Samhita, Parvati Khanda 25",
+    "hi": "शिव पुराण, रुद्र संहिता, पार्वती खंड 25"
+   },
+   "show": {
+    "kind": "custom",
+    "set": "kailash",
+    "sky": [
+     "calm",
+     "gold"
+    ],
+    "cast": [
+     {
+      "who": "shiva",
+      "seated": true,
+      "pose": "med",
+      "eyes_closed": 0.5
+     }
+    ],
+    "fx": [
+     {
+      "kind": "sparkle",
+      "on": "shiva",
+      "from": 0.4,
+      "to": 1
+     }
+    ],
+    "cam": {
+     "frame": [
+      "shiva"
+     ],
+     "push": 0.15
+    }
+   }
+  },
+  {
+   "id": "send",
+   "say": {
+    "en": "He called the seven sages, Vasishtha and the others, and sent them to test her.",
+    "hi": "उन्होंने वशिष्ठ आदि सात ऋषियों को बुलाया, और उनकी परीक्षा लेने भेजा।"
+   },
+   "cap": {
+    "en": "He called *the seven sages,* | Vasishtha and the others, | and sent them *to test her.*",
+    "hi": "उन्होंने वशिष्ठ आदि | *सात ऋषियों* को बुलाया, | और उनकी *परीक्षा* लेने भेजा।"
+   },
+   "src": {
+    "en": "Shiva Purana, Rudra Samhita, Parvati Khanda 25",
+    "hi": "शिव पुराण, रुद्र संहिता, पार्वती खंड 25"
+   },
+   "show": {
+    "kind": "send",
+    "leader": "shiva",
+    "group": [
+     "sage1",
+     "sage2",
+     "sage3"
+    ]
+   }
+  },
+  {
+   "id": "found",
+   "say": {
+    "en": "They saw her as penance itself in person, and asked: whom do you worship, and why?",
+    "hi": "उन्होंने उन्हें साक्षात तपस्या की मूर्ति के रूप में देखा, और पूछा, आप किसकी आराधना करती हैं, और क्यों?"
+   },
+   "cap": {
+    "en": "They saw her | as *penance itself in person,* | and asked: | *whom do you worship, and why?*",
+    "hi": "उन्होंने उन्हें | *साक्षात तपस्या की मूर्ति* | के रूप में देखा, और पूछा, | *आप किसकी आराधना करती हैं,* | और क्यों?"
+   },
+   "src": {
+    "en": "Shiva Purana, Rudra Samhita, Parvati Khanda 25",
+    "hi": "शिव पुराण, रुद्र संहिता, पार्वती खंड 25"
+   },
+   "show": {
+    "kind": "discover",
+    "found": "parvati",
+    "finders": [
+     "sage1",
+     "sage2"
+    ]
+   }
+  },
+  {
+   "id": "answer",
+   "say": {
+    "en": "She said: on the advice of the divine sage Narada, I wish for Lord Rudra as my husband.",
+    "hi": "उन्होंने कहा, देवर्षि नारद के उपदेश से, मैं भगवान रुद्र को पति रूप में पाना चाहती हूँ।"
+   },
+   "cap": {
+    "en": "She said: | on the advice of | *the divine sage Narada,* | I wish for *Lord Rudra* | as my husband.",
+    "hi": "उन्होंने कहा, | *देवर्षि नारद* के उपदेश से, | मैं *भगवान रुद्र* को | पति रूप में पाना चाहती हूँ।"
+   },
+   "src": {
+    "en": "Shiva Purana, Rudra Samhita, Parvati Khanda 25",
+    "hi": "शिव पुराण, रुद्र संहिता, पार्वती खंड 25"
+   },
+   "show": {
+    "kind": "custom",
+    "set": "forest",
+    "sky": [
+     "gold",
+     "gold"
+    ],
+    "cast": [
+     {
+      "who": "parvati",
+      "at": "front_left",
+      "yaw": 0.5,
+      "talk": [
+       0.1,
+       0.9
+      ]
+     },
+     {
+      "who": "sage1",
+      "at": "front_right",
+      "yaw": -0.5
+     }
+    ],
+    "cam": {
+     "frame": [
+      "parvati",
+      "sage1"
+     ]
+    }
+   }
+  },
+  {
+   "id": "mock",
+   "say": {
+    "en": "To test her, the sages laughed, and spoke words that were not true.",
+    "hi": "परीक्षा लेने के लिए, ऋषियों ने हँसकर ऐसी बातें कहीं जो सच नहीं थीं।"
+   },
+   "cap": {
+    "en": "To test her, | the sages laughed, | and spoke *words that were not true.*",
+    "hi": "परीक्षा लेने के लिए, | ऋषियों ने हँसकर | ऐसी बातें कहीं | *जो सच नहीं थीं।*"
+   },
+   "src": {
+    "en": "Shiva Purana, Rudra Samhita, Parvati Khanda 25",
+    "hi": "शिव पुराण, रुद्र संहिता, पार्वती खंड 25"
+   },
+   "show": {
+    "kind": "custom",
+    "set": "forest",
+    "sky": [
+     "gold",
+     "gold"
+    ],
+    "cast": [
+     {
+      "who": "parvati",
+      "at": "front_left",
+      "yaw": 0.5
+     },
+     {
+      "who": "sage1",
+      "at": "front_right",
+      "yaw": -0.5,
+      "talk": [
+       0.1,
+       0.9
+      ]
+     }
+    ],
+    "cam": {
+     "frame": [
+      "parvati",
+      "sage1"
+     ]
+    }
+   }
+  },
+  {
+   "id": "argue",
+   "say": {
+    "en": "They said: Narada misleads people. Shiva has no home, no lineage, and lives among ghosts.",
+    "hi": "उन्होंने कहा, नारद लोगों को भटकाते हैं। शिव का कोई घर नहीं, कोई कुल नहीं, और वे भूतों के साथ रहते हैं।"
+   },
+   "cap": {
+    "en": "They said: | *Narada misleads people.* | Shiva has no home, no lineage, | and lives among ghosts.",
+    "hi": "उन्होंने कहा, | *नारद लोगों को भटकाते हैं।* | शिव का कोई घर नहीं, | कोई कुल नहीं, | और वे भूतों के साथ रहते हैं।"
+   },
+   "src": {
+    "en": "Shiva Purana, Rudra Samhita, Parvati Khanda 25",
+    "hi": "शिव पुराण, रुद्र संहिता, पार्वती खंड 25"
+   }
+  },
+  {
+   "id": "vishnu",
+   "say": {
+    "en": "Choose Lord Vishnu as your husband instead. We will arrange the wedding.",
+    "hi": "इसके बदले भगवान विष्णु से विवाह कीजिए। हम विवाह करवा देंगे।"
+   },
+   "cap": {
+    "en": "Choose *Lord Vishnu* as your husband | instead. | We will arrange the wedding.",
+    "hi": "इसके बदले | *भगवान विष्णु* से | विवाह कीजिए। | हम विवाह करवा देंगे।"
+   },
+   "src": {
+    "en": "Shiva Purana, Rudra Samhita, Parvati Khanda 25",
+    "hi": "शिव पुराण, रुद्र संहिता, पार्वती खंड 25"
+   }
+  },
+  {
+   "id": "mountain",
+   "say": {
+    "en": "Mata Parvati laughed and said: I am born of a mountain. Firmness is in my very nature.",
+    "hi": "माता पार्वती ने हँसकर कहा, मैं पर्वत की पुत्री हूँ। दृढ़ता मेरे स्वभाव में है।"
+   },
+   "cap": {
+    "en": "Mata Parvati laughed and said: | I am *born of a mountain.* | *Firmness* is in my very nature.",
+    "hi": "माता पार्वती ने हँसकर कहा, | मैं *पर्वत की पुत्री* हूँ। | *दृढ़ता* मेरे स्वभाव में है।"
+   },
+   "src": {
+    "en": "Shiva Purana, Rudra Samhita, Parvati Khanda 25",
+    "hi": "शिव पुराण, रुद्र संहिता, पार्वती खंड 25"
+   },
+   "show": {
+    "kind": "portrait",
+    "who": "parvati",
+    "mood": "happy",
+    "set": "forest"
+   }
+  },
+  {
+   "id": "brahman",
+   "say": {
+    "en": "Shiva is Brahman, unchanging. He takes a form for the good of his devotees.",
+    "hi": "शिव तो ब्रह्म हैं, निर्विकार। वे भक्तों के कल्याण के लिए रूप धारण करते हैं।"
+   },
+   "cap": {
+    "en": "*Shiva is Brahman,* unchanging. | He takes a form | for *the good of his devotees.*",
+    "hi": "*शिव तो ब्रह्म हैं,* निर्विकार। | वे *भक्तों के कल्याण* के लिए | रूप धारण करते हैं।"
+   },
+   "src": {
+    "en": "Shiva Purana, Rudra Samhita, Parvati Khanda 25",
+    "hi": "शिव पुराण, रुद्र संहिता, पार्वती खंड 25"
+   }
+  },
+  {
+   "id": "vow",
+   "say": {
+    "en": "If Shiva does not marry me, I shall stay unmarried forever.",
+    "hi": "यदि शिव मुझसे विवाह नहीं करेंगे, तो मैं सदा अविवाहित रहूँगी।"
+   },
+   "cap": {
+    "en": "If Shiva does not marry me, | *I shall stay unmarried forever.*",
+    "hi": "यदि शिव मुझसे | विवाह नहीं करेंगे, | तो मैं *सदा अविवाहित* रहूँगी।"
+   },
+   "src": {
+    "en": "Shiva Purana, Rudra Samhita, Parvati Khanda 25",
+    "hi": "शिव पुराण, रुद्र संहिता, पार्वती खंड 25"
+   },
+   "show": {
+    "kind": "portrait",
+    "who": "parvati",
+    "pose": "namaste",
+    "mood": "calm",
+    "set": "forest",
+    "sky": [
+     "gold",
+     "gold"
+    ]
+   }
+  },
+  {
+   "id": "lotus",
+   "say": {
+    "en": "Even if a lotus bloomed on a rock, on a mountain top, my resolve would not break.",
+    "hi": "चाहे पर्वत की चोटी पर चट्टान पर कमल खिल जाए, मेरा निश्चय नहीं टूटेगा।"
+   },
+   "cap": {
+    "en": "Even if *a lotus bloomed* | on a rock, on a mountain top, | *my resolve would not break.*",
+    "hi": "चाहे पर्वत की चोटी पर | चट्टान पर *कमल खिल जाए,* | *मेरा निश्चय नहीं टूटेगा।*"
+   },
+   "src": {
+    "en": "Shiva Purana, Rudra Samhita, Parvati Khanda 25",
+    "hi": "शिव पुराण, रुद्र संहिता, पार्वती खंड 25"
+   }
+  },
+  {
+   "id": "bless",
+   "say": {
+    "en": "The sages saw her resolve. They praised her, blessed her, and bowed to the goddess.",
+    "hi": "ऋषियों ने उनका अटल निश्चय देखा। उन्होंने उनकी प्रशंसा की, आशीर्वाद दिया, और देवी को प्रणाम किया।"
+   },
+   "cap": {
+    "en": "The sages saw *her resolve.* | They praised her, *blessed her,* | and *bowed to the goddess.*",
+    "hi": "ऋषियों ने उनका | *अटल निश्चय* देखा। | उन्होंने उनकी प्रशंसा की, | आशीर्वाद दिया, | और *देवी को प्रणाम* किया।"
+   },
+   "src": {
+    "en": "Shiva Purana, Rudra Samhita, Parvati Khanda 25",
+    "hi": "शिव पुराण, रुद्र संहिता, पार्वती खंड 25"
+   },
+   "show": {
+    "kind": "custom",
+    "set": "forest",
+    "sky": [
+     "gold",
+     "gold"
+    ],
+    "cast": [
+     {
+      "who": "parvati",
+      "at": "center",
+      "act": [
+       {
+        "do": "lift",
+        "y": 0.4
+       }
+      ]
+     },
+     {
+      "who": "sage1",
+      "at": "front_left",
+      "yaw": 0.6,
+      "pose": "namaste",
+      "act": [
+       {
+        "do": "bow",
+        "amount": 0.35
+       }
+      ],
+      "eyes": "closed"
+     },
+     {
+      "who": "sage2",
+      "at": "front_right",
+      "yaw": -0.6,
+      "pose": "namaste",
+      "act": [
+       {
+        "do": "bow",
+        "amount": 0.35
+       }
+      ],
+      "eyes": "closed"
+     }
+    ],
+    "fx": [
+     {
+      "kind": "seat",
+      "at": "center"
+     },
+     {
+      "kind": "petals",
+      "at": "center"
+     }
+    ],
+    "cam": {
+     "frame": [
+      "parvati",
+      "sage1",
+      "sage2"
+     ],
+     "angle": "high"
+    }
+   }
+  },
+  {
+   "id": "report",
+   "say": {
+    "en": "Then they returned to Lord Shiva, and told him everything.",
+    "hi": "फिर वे भगवान शिव के पास लौटे, और उन्हें सब कुछ बताया।"
+   },
+   "cap": {
+    "en": "Then they returned | to *Lord Shiva,* | and told him everything.",
+    "hi": "फिर वे | *भगवान शिव* के पास लौटे, | और उन्हें सब कुछ बताया।"
+   },
+   "src": {
+    "en": "Shiva Purana, Rudra Samhita, Parvati Khanda 25",
+    "hi": "शिव पुराण, रुद्र संहिता, पार्वती खंड 25"
+   },
+   "show": {
+    "kind": "duo",
+    "a": "shiva",
+    "b": "sage1",
+    "speaker": "sage1",
+    "set": "kailash"
+   }
+  },
+  {
+   "id": "end",
+   "say": {
+    "en": "Har Har Mahadev! True devotion never wavers.",
+    "hi": "हर हर महादेव! सच्ची भक्ति अटल रहती है।"
+   },
+   "cap": {
+    "en": "*Har Har Mahadev!* | True devotion | *never wavers.*",
+    "hi": "*हर हर महादेव!* | सच्ची भक्ति | *अटल रहती है।*"
+   },
+   "no_claim": true,
+   "show": {
+    "kind": "custom",
+    "set": "kailash",
+    "sky": [
+     "gold",
+     "dawn"
+    ],
+    "cast": [
+     {
+      "who": "shiva",
+      "seated": true,
+      "pose": [
+       "hold",
+       "blessH",
+       0.1,
+       0.3
+      ]
+     },
+     {
+      "who": "parvati",
+      "at": "front_left",
+      "yaw": 0.5,
+      "pose": "namaste"
+     }
+    ],
+    "fx": [
+     {
+      "kind": "petals",
+      "at": "front"
+     }
+    ],
+    "cam": {
+     "frame": [
+      "parvati",
+      "shiva"
+     ],
+     "push": -0.15
+    }
+   }
+  }
+ ],
+ "pills": [
+  {
+   "line": "send",
+   "a": 0.1,
+   "b": 0.6,
+   "on": "shiva",
+   "text": {
+    "en": "LORD SHIVA",
+    "hi": "भगवान शिव"
+   }
+  },
+  {
+   "line": "send",
+   "a": 0.6,
+   "b": 1,
+   "style": "or",
+   "text": {
+    "en": "SAPTARISHIS",
+    "hi": "सप्तर्षि"
+   }
+  },
+  {
+   "line": "answer",
+   "a": 0.1,
+   "b": 0.9,
+   "on": "parvati",
+   "text": {
+    "en": "MATA PARVATI",
+    "hi": "माता पार्वती"
+   }
+  },
+  {
+   "line": "mock",
+   "a": 0.2,
+   "b": 1,
+   "style": "gr",
+   "text": {
+    "en": "A TEST",
+    "hi": "परीक्षा"
+   },
+   "on": "sage1"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Shiva Purana, Rudra Samhita, Parvati Khanda ch. 25, The seven celestial sages test Parvati (J. L. Shastri translation, wisdomlib) [verses: astonish: v.3 to 5; send: v.7 to 17; found: v.18 to 21 (v.19); answer: v.26 to 27; mock: v.17, 28; argue: v.29 to 30, 46; vishnu: v.53 to 54; mountain: v.55 to 57; brahman: v.64 to 66; vow: v.68; lotus: v.69; bless: v.71 to 72; report: v.72 to 73]",
+   "url": "https://de.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226089.html",
+   "fetched": "2026-11-28",
+   "supports": [
+    "astonish",
+    "send",
+    "found",
+    "answer",
+    "mock",
+    "argue",
+    "vishnu",
+    "mountain",
+    "brahman",
+    "vow",
+    "lotus",
+    "bless",
+    "report"
+   ]
+  },
+  {
+   "title": "Shiva Purana, Rudra Samhita, Parvati Khanda ch. 25, Sanskrit colophon: Saptarshikrita Pariksha Varnana (vedapath)",
+   "url": "https://vedapath.app/th/shiva-purana/rudra/parvati/25/25",
+   "fetched": "2026-11-28",
+   "supports": [
+    "send",
+    "bless"
+   ]
+  },
+  {
+   "title": "Shiva Purana, Rudra Samhita, Parvati Khanda 25.29, Sanskrit: the sages on Narada (vedapath)",
+   "url": "https://vedapath.app/km/shiva-purana/rudra/parvati/25/29",
+   "fetched": "2026-11-28",
+   "supports": [
+    "argue"
+   ]
+  }
+ ],
+ "cover": {
+  "line": "bless",
+  "at": 0.7
+ },
+ "post": {
+  "en": {
+   "post_at": "2026-11-28T20:30:00+05:30",
+   "instagram_caption": "Lord Shiva sent the seven sages to test Mata Parvati 🙏\n\nThey mocked Narada, called Lord Shiva homeless, and offered her Lord Vishnu instead. She replied: even if a lotus bloomed on a rock on a mountain top, my resolve would not break.\n\nTold from the Shiva Purana, Rudra Samhita, Parvati Khanda, chapter 25.\n\nWhat would you have said to the sages?\n\n#kathaclay #parvati #shivapurana #saptarishi #hindustories",
+   "youtube_title": "How the Seven Sages Tested Mata Parvati | Shiva Purana",
+   "youtube_description": "To test Mata Parvati's penance, Lord Shiva sent the seven sages. They spoke false words on purpose, but she would not waver: if Shiva does not marry me, I shall stay unmarried forever. Told as cute 3D clay animation, from the Shiva Purana.\n\nSources:\n• Shiva Purana, Rudra Samhita, Parvati Khanda, chapter 25 (J. L. Shastri translation)\n• https://de.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226089.html\n\n#Parvati #ShivaPurana #Shorts",
+   "youtube_tags": [
+    "Parvati",
+    "Saptarishi",
+    "seven sages",
+    "Shiva Purana",
+    "Mahadev",
+    "Hindu stories",
+    "clay animation"
+   ]
+  },
+  "hi": {
+   "post_at": "2026-11-28T20:45:00+05:30",
+   "instagram_caption": "भगवान शिव ने सप्तर्षियों को माता पार्वती की परीक्षा लेने भेजा 🙏\n\nऋषियों ने नारद जी की निंदा की, भगवान शिव को बेघर कहा, और भगवान विष्णु से विवाह की बात कही। माता ने कहा: चाहे चट्टान पर कमल खिल जाए, मेरा निश्चय नहीं टूटेगा।\n\nशिव पुराण, रुद्र संहिता, पार्वती खंड, अध्याय 25 के अनुसार।\n\nआप ऋषियों को क्या उत्तर देते?\n\n#kathaclayhindi #parvati #shivpuran #saptarishi #bhakti",
+   "youtube_title": "सप्तर्षियों ने कैसे ली माता पार्वती की परीक्षा | शिव पुराण",
+   "youtube_description": "माता पार्वती के तप की परीक्षा लेने के लिए भगवान शिव ने सप्तर्षियों को भेजा। ऋषियों ने जानबूझकर झूठी बातें कहीं, पर माता अडिग रहीं: यदि शिव मुझसे विवाह नहीं करेंगे, तो मैं सदा अविवाहित रहूँगी। शिव पुराण की कथा, प्यारे 3D क्ले एनिमेशन में।\n\nSources:\n• Shiva Purana, Rudra Samhita, Parvati Khanda, chapter 25 (J. L. Shastri translation)\n• https://de.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226089.html\n\n#Parvati #ShivPuran #Shorts",
+   "youtube_tags": [
+    "पार्वती",
+    "Parvati",
+    "सप्तर्षि",
+    "शिव पुराण",
+    "महादेव",
+    "Hindu stories"
+   ]
+  }
+ }
+}

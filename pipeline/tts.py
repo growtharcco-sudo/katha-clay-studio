@@ -22,7 +22,7 @@ FIX = {
   "ˈaːtmaːj": "ˈaːtmaːẽː", "sʋˈʌjən": "sʋˈʌjəm", "mˌahaːdˈeʋ": "məhaːdˈeːʋ", " ki ": " kiː ", " ki": " kiː",
   "kʃˌiːɾsˈaːɡəɾ": "kʃˈiːɾ sˈaːɡəɾ", "mˌəndəɾˈaːcəl": "mˌəndəɾˈaːtʃəl", "hˈʌɾ hˈʌɾ": "hˈəɾ hˈəɾ",
   "kiːː": "kiː", "ɡˈʌɳəptɪ": "ɡˈəɳəpəti", "cʰˈɪr.kˌaː": "tʃʰˈɪɽkaː", "kʰˈʌr.aː": "kʰˈəɽaː", "bˈʌpːaː mˈoːɾjˌaː": "bˈəppaː mˈoːɾjaː",
-  "ɡˌəɳeːʃˈaːj nˈʌməh": "ɡəɳˈeːʃaːjə nˈʌməhə"},
+  "ɡˌəɳeːʃˈaːj nˈʌməh": "ɡəɳˈeːʃaːjə nˈʌməhə", "ɡˈɔːɾi": "ɡˈəʊɾiː", "ʌpˈʌrɳaː": "əpˈəɾɳaː"},
 }
 
 def phon(k, text, lang):
